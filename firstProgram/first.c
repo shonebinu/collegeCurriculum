@@ -12,6 +12,20 @@ Header file -> Contains declarations(prototypes) of functions like printf.
 #include<stdio.h>
 int main() {
 	printf("Shone Binu");
+
+	int var = 3;
+	var = 4;
+	printf("%d", var);
+
+	int var1 = 3;
+	int var2;
+	var2 = var1;
+	printf("%d", var2);
+
+	int var3, var4, var5;
+	var3 = var4 = var5 = 5;
+	printf("%d %d %d", var3, var4, var5);
+
 	return 0;
 }
 
