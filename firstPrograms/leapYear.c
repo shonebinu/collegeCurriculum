@@ -20,7 +20,8 @@ int main() {
    // but divisible by 4
     else if (year % 4 == 0) {
         printf("%d is a leap year.", year);
-    } 
+    }
+     
     
    // all other years are not leap years
     else {
