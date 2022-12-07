@@ -1,7 +1,9 @@
 // Prime or not?
 #include <stdio.h>
 int main() {
+
     int num, i;
+    
     printf("Enter the number you want to check? \n");
     scanf("%d", &num);
 
