@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-int main() {
+int main()
+{
 
     char characterName[] = "Shone Binu";
     int characterAge = 35;
@@ -11,6 +12,12 @@ int main() {
     characterAge = 30;
     printf("He really liked the name %s.\n", characterName);
     printf("but did not like being %d.\n", characterAge);
-    
+
     return 0;
+
+    /*
+    Multi line comment
+    */
+
+    // Single Line comment
 }
