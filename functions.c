@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+void sayHi(char name[], int age);
+
 int main() // "function" is just a synonym of "method"
 {
   printf("Top\n\n");
