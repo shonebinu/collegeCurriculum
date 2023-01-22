@@ -2,11 +2,18 @@
 
 void main()
 {
-  int array[5] = {3, 1, 5, 2, 4};
-  int temp;
-  for (int i = 0; i < 5; i++)
+  int array[10], n, temp;
+  printf("Enter the number of elements of the array: ");
+  scanf("%d", &n);
+  printf("Enter the elements: \n");
+  for (int i = 0; i < n; i++)
   {
-    for (int j = i; j < 5; j++)
+    printf("array[%d]: ", i);
+    scanf("%d", &array[i]);
+  }
+  for (int i = 0; i < n; i++)
+  {
+    for (int j = i; j < n; j++)
     {
       if (array[j] < array[i])
       {
@@ -16,6 +23,7 @@ void main()
       }
     }
   }
-  for (int i = 0; i < 5; i++)
+  printf("The sorted array: ");
+  for (int i = 0; i < n; i++)
     printf("%d ", array[i]);
 }
