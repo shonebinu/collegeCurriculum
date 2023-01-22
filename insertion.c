@@ -2,31 +2,30 @@
 
 void main()
 {
-  int ele, i, pos, num[11] = {10, 20, 30, 40, 50, 60, 70, 80, 90, 100};
-
-  for (i = 0; i < 10; i++)
+  int array[10], n, temp, pos, new;
+  printf("Enter the number of elements of the array: ");
+  scanf("%d", &n);
+  printf("Enter the elements: \n");
+  for (int i = 0; i < n; i++)
   {
-    printf("%d ", num[i]);
+    printf("array[%d]: ", i);
+    scanf("%d", &array[i]);
   }
-  printf("\n");
+  printf("The array is: ");
+  for (int i = 0; i < n; i++)
+    printf("%d ", array[i]);
 
-  printf("Enter the element you want to add: ");
-  scanf("%d", &ele);
-
-  printf("Enter the position you want to add it to: ");
+  printf("\nIn which position do you want to add the new element: ");
   scanf("%d", &pos);
+  printf("Enter the element you want to add to the array: ");
+  scanf("%d", &new);
 
-  for (i = 10; i >= pos - 1; i--)
-  {
-    num[i + 1] = num[i];
-  }
+  for (int i = n - 1; i >= pos - 1; i--)
+    array[i + 1] = array[i];
 
-  num[pos - 1] = ele;
+  array[pos - 1] = new;
 
-  for (i = 0; i < 11; i++)
-  {
-    printf("%d ", num[i]);
-  }
-
-  printf("\n");
+  printf("The new array: ");
+  for (int i = 0; i <= n; i++)
+    printf("%d ", array[i]);
 }
