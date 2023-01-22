@@ -2,7 +2,7 @@
 
 void main()
 {
-  int array[10], n, temp, pos, new;
+  int array[10], n, pos, new;
   printf("Enter the number of elements of the array: ");
   scanf("%d", &n);
   printf("Enter the elements: \n");

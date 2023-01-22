@@ -2,39 +2,36 @@
 
 void main()
 {
-
-  int ele, i, pos, num[10] = {10, 20, 30, 40, 50, 60, 70, 80, 90, 100};
-
-  for (i = 0; i < 10; i++)
+  int array[10], n, del, pos;
+  printf("Enter the number of elements of the array: ");
+  scanf("%d", &n);
+  printf("Enter the elements: \n");
+  for (int i = 0; i < n; i++)
   {
-    printf("%d ", num[i]);
+    printf("array[%d]: ", i);
+    scanf("%d", &array[i]);
   }
-  printf("\n");
+  printf("The array is: ");
+  for (int i = 0; i < n; i++)
+    printf("%d ", array[i]);
 
-  printf("Enter the element you want to remove: ");
-
-  scanf("%d", &ele);
-
-  for (i = 0; i < 10; i++)
+  printf("\nEnter the element you want to delete: ");
+  scanf("%d", &del);
+  for (int i = 0; i < n; i++)
   {
-    if (num[i] == ele)
+    if (array[i] == del)
     {
       pos = i;
       break;
     }
   }
 
-  printf("%d\n", i);
-
-  for (i = pos; i < 10; i++)
+  for (int i = pos; i < n; i++)
   {
-    num[i] = num[i + 1];
+    array[i] = array[i + 1];
   }
 
-  for (i = 0; i < 9; i++)
-  {
-    printf("%d ", num[i]);
-  }
-
-  printf("\n");
+  printf("The new array: ");
+  for (int i = 0; i < n - 1; i++)
+    printf("%d ", array[i]);
 }
