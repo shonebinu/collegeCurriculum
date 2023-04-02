@@ -1,16 +1,14 @@
 #include <stdio.h>
 
 int binarySearch(int x[], int size, int key) {
-    int L, R, mid;
-    L = -1; R = size;
-    while (L + 1 != R) {
-        mid = (L+R) / 2;
-        if (x[mid] > key)
-            R = mid;
-        else L = mid;
+    int left = 0, right = size-1, mid;
+    while(left <= right) {
+        mid = (right + left) / 2; // or mid = left + (right - left) / 2; (for avoiding overflows)
+        if (x[mid] == key) return mid;
+        else if (key < x[mid]) right = mid - 1;
+        else if (key > x[mid]) left = mid; + 1;
     }
-    if (L >= 0 && x[L] == key) return L;
-    else return -1;
+    return -1;
 }
 
 int main() {
