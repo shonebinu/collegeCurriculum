@@ -1,9 +1,9 @@
 # learningC
 
-## C
+## 1st Sem C
 Pending 
 
-## C++
+## 2nd Sem C++ 
 
 ### Record
 1. [Program to perform all arithematic operations using default arguments.](./cpp/lab/defaultArg.cpp)
