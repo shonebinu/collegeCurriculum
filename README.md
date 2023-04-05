@@ -1,7 +1,7 @@
 # learningC
 
 ## C
-Pending ->
+Pending 
 
 ## C++
 
