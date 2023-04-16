@@ -32,4 +32,5 @@ int main() {
     String1 a("Nirmala"), b("College"), c;
     c.join(a, b);
     c.display();
+    return 0;
 }
