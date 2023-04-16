@@ -18,14 +18,15 @@ class Complex {
         void display() {
             cout<<a<<" + i"<<b<<endl;
         }
-        friend Complex sum(Complex p, Complex q) {
+        friend Complex sum(Complex p, Complex q);
+};
+
+Complex sum(Complex p, Complex q) {
             Complex c;
             c.a = p.a + q.a;
             c.b = p.b + q.b;
             return c;
         }
-};
-
 int main() {
     Complex c1, c2(10), c3(2, 3);
     c1 = sum(c2, c3);
