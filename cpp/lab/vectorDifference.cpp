@@ -10,7 +10,7 @@ public:
         cin >> a >> b >> c;
     }
 
-    void display() const {
+    void display() {
         cout << "(" << a << "i + " << b << "j + " << c << "k)";
     }
 
