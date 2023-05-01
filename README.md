@@ -24,11 +24,10 @@ Pending
 16. [Program to implement the concept of single inheritance.](./cpp/lab/singleInheritancePublic.cpp)
 17. [Program to implement the concept of multiple inheritance.](./cpp/lab/multipleInheritance.cpp)
 18. [Program to implement the concept of multilevel inheritance.](./cpp/lab/multiLevelInheritance.cpp) 
-19. Program to implement the concept of hierarchical inheritance
-20. Program to implement the concept of hybrid inheritance 
-21. Program to implement the concept of virtual base class
-22. Program to implement constructors in derived class
-23. Program to implement the concept of 'this' pointer
-24. Program to implement the concept of virtual function
-25. Program to implement the concept of run time polymorphism
-
+19. [Program to implement the concept of hierarchical inheritance.](./cpp/lab/hierarchialInheritance.cpp)
+20. [Program to implement the concept of hybrid inheritance.](./cpp/lab/hybridInheritance.cpp)
+21. Program to implement the concept of virtual base class.
+22. Program to implement constructors in derived class.
+23. Program to implement the concept of 'this' pointer.
+24. Program to implement the concept of virtual function.
+25. Program to implement the concept of run time polymorphism.
