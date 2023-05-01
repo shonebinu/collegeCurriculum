@@ -30,4 +30,4 @@ Pending
 22. [Program to implement constructors in derived class.](./cpp/lab/constructorDerivedClass.cpp)
 23. [Program to implement the concept of 'this' pointer.](./cpp/lab/thisPointer.cpp)
 24. [Program to implement the concept of virtual function.](./cpp/lab/virtualFunction.cpp)
-25. Program to implement the concept of run time polymorphism.
+25. [Program to implement the concept of run time polymorphism.](./cpp/lab/runTimePolymorphism.cpp)
