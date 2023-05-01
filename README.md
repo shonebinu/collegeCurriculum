@@ -21,11 +21,11 @@ Pending
 13. [Program with class distance with data members km and m. C++ program to add 2 distances using the concept of binary operator overloading(+ operator).](./cpp/lab/distanceBinaryOverloading.cpp)
 14. [Program to find the difference between 2 vector objects with the concept of operator overloading using friend functions.](./cpp/lab/vectorDifference.cpp)
 15. [Program to perform addition of 2 matrix object by operator overloading using friend function.](./cpp/lab/matrixAddOverload.cpp)
-16. Program to implement the concept of single inheritence - Public
-17. Program to implement the concept of multiple inheritence
-18. Program to implement the concept of multilevel inheritence 
-19. Program to implement the concept of hierarchical inheritence
-20. Program to implement the concept of hybrid inheritence 
+16. [Program to implement the concept of single inheritance.](./cpp/lab/singleInheritancePublic.cpp)
+17. Program to implement the concept of multiple inheritance
+18. Program to implement the concept of multilevel inheritance 
+19. Program to implement the concept of hierarchical inheritance
+20. Program to implement the concept of hybrid inheritance 
 21. Program to implement the concept of virtual base class
 22. Program to implement constructors in derived class
 23. Program to implement the concept of 'this' pointer
