@@ -22,7 +22,7 @@ Pending
 14. [Program to find the difference between 2 vector objects with the concept of operator overloading using friend functions.](./cpp/lab/vectorDifference.cpp)
 15. [Program to perform addition of 2 matrix object by operator overloading using friend function.](./cpp/lab/matrixAddOverload.cpp)
 16. [Program to implement the concept of single inheritance.](./cpp/lab/singleInheritancePublic.cpp)
-17. Program to implement the concept of multiple inheritance
+17. [Program to implement the concept of multiple inheritance.](./cpp/lab/multipleInheritance.cpp)
 18. Program to implement the concept of multilevel inheritance 
 19. Program to implement the concept of hierarchical inheritance
 20. Program to implement the concept of hybrid inheritance 
