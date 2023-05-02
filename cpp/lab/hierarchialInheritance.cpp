@@ -12,7 +12,7 @@ class Staff {
             cin>>staff_id>>name;
         }
         void put() {
-            cout<<"Staff ID: "<<staff_id<<endl<<"Name: "<<name<<endl;;
+            cout<<"Staff ID: "<<staff_id<<endl<<"Name: "<<name<<endl;
         }
 };
 
