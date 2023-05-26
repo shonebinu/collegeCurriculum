@@ -1,10 +1,9 @@
 # College Curriculum
 
-## 1st Sem C
-
-[Previous Year C lab exam question papers](./c/lab/prevQns/)
+## 1st Sem
 
 ### Previous Year C lab exam questions with answers 
+[Previous Year C lab exam question papers](./c/lab/prevQns/)
 
 [**Question Paper 1**](./c/lab/prevQns/1.jpeg)
 
@@ -53,9 +52,9 @@
 
 
 
-## 2nd Sem C++ 
+## 2nd Sem
 
-### Record
+### C++ Record
 1. [Program to perform all arithematic operations using default arguments.](./cpp/lab/defaultArg.cpp)
 2. [Program to find the volume of cube, cylinder and rectangular box using function overloading within a class.](./cpp/lab/overloading.cpp)
 3. [Program to create class student with 3 data members and member functions.](./cpp/lab/studentAgeDifferentitate.cpp)
