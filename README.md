@@ -1,7 +1,57 @@
-# learningC
+# College Curriculum
 
 ## 1st Sem C
-Pending 
+
+[Previous Year C lab exam question papers](./c/lab/prevQns/)
+
+### Previous Year C lab exam questions with answers 
+
+[**Question Paper 1**](./c/lab/prevQns/1.jpeg)
+
+1. [Write a C program to display all Fibonacci Numbers...](./c/lab/fibanocciUpto400.c)
+2. [Write a C program to alphabetically sort the names...](./c/lab/sortNameEmployee.c)
+3. [A company produces three types of products, Fan, Ac...](./c/lab/fanAcTv.c)
+4. [Write a C program to read in a matrix of order MxN...](./c/lab/scalarMatrix.c)
+
+[**Question Paper 2**](./c/lab/prevQns/2.jpeg)
+
+5. [Write a C program to read in two integers a and b and...](./c/lab/aOPb.c)
+6. [Write a C program using the concept of array of structures...](./c/lab/arrOfStruct.c)
+7. [Write a C program to calculate the average of odd and even...](./c/lab/avgOddEven9999.c)
+8. [Write a C program to calculate the volume and total surface area...](./c/lab/cylinderVolTSA.c)
+
+[**Question Paper 3**](./c/lab/prevQns/3.jpeg)
+
+9. [Given a set of employees, Write a C program to calculate the...](./c/lab)
+10. [Write a C program using the concept of array of structures to calculate the Batting average...](./c/lab/battingAverage.c)
+11. [Given a set of numbers, Write a C program to find the number of even and odd numbers in it...](./c/lab/noEvenOdd.c)
+12. [Write a C program to read in a one dimensional array of integers in random order...](./c/lab/medianSortedArray.c)
+
+[**Question Paper 4**](./c/lab/prevQns/4.jpeg)
+
+13. [Palindrome number](./c/lab/palindrome.c)
+14. [Sum of Digits](./c/lab/sumDig.c)
+15. [Reverse Number](./c/lab/reverseNum.c)
+16. [Write a C program to print number triangle](./c/lab/numTriangle.c)
+17. [Calculate nPr and nCr](./c/lab/nPrnCr.c)
+18. [Program to generate multiplication table](./c/lab/multiplication.c)
+19. [C Program to count number of digits in an integer](./c/lab/countDig.c)
+20. [Calculate the sum of natural numbers using the while loop](./c/lab/sumOfNWhile.c)
+21. [C Program to reverse a string using pointer](./c/lab/revStringPoi.c)
+22. [Add two distances (in Inch-Feet) system using structures](./c/lab/twoDist.c)
+23. [Pyramid pattern using star*](./c/lab/pyramid.c)
+24. [C Program to check whether the string is palindrome or not](./c/lab/paliString.c)
+
+[**Question Paper 5**](./c/lab/prevQns/5.jpeg)
+
+[**Question Paper 6**](./c/lab/prevQns/6.jpeg)
+
+29. [Write a C program to find the sum and sum of squares...](./c/lab/sum%26sumSquares.c)
+30. [Write a C program using the concept of array of structures to display the applicant's index mark...](./c/lab/indexMark.c)
+31. [Write a C program to read in the rollno and the marks in two subjects(out of 100) for a set of students...](./c/lab/aggregateMarks.c)
+32. [Write a C program to create a structure to store Date in the format DD/MM/YYYY. Using the structure...](./c/lab/date.c)
+
+
 
 ## 2nd Sem C++ 
 
