@@ -9,8 +9,8 @@ int main()
         printf("%d\n",c); 
         if(c%3==0) 
         {
-        l[i]=c;
-        i++;
+            l[i]=c;
+            i++;
         }
         a=b;
         b=c;
