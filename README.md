@@ -43,6 +43,11 @@
 
 [**Question Paper 5**](./c/lab/prevQns/5.jpeg)
 
+25. [Write a C program to calculate the salary slip showing the net pay for each employee...](./c/lab/salarySlipEmployee.c)
+26. [Write a C program to read in a line of text and fine no. of capital letters, digits, words...](./c/lab/charsInText.c)
+27. [Given the marks in two subjects for a number of students in a class. Write a C program to display...](./c/lab/studentsAndClassAvg.c)
+28. [Create a user defined data type for storing the time in HH:MM:SS format. Write a C program using the concept of structures...](./c/lab/time.c)
+
 [**Question Paper 6**](./c/lab/prevQns/6.jpeg)
 
 29. [Write a C program to find the sum and sum of squares...](./c/lab/sum%26sumSquares.c)
