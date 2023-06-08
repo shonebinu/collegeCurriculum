@@ -55,6 +55,25 @@
 31. [Write a C program to read in the rollno and the marks in two subjects(out of 100) for a set of students...](./c/lab/aggregateMarks.c)
 32. [Write a C program to create a structure to store Date in the format DD/MM/YYYY. Using the structure...](./c/lab/date.c)
 
+[**Question Paper 7**](./c/lab/prevQns/7.pdf)
+
+33. [Write a program to print the sum of all odd integers between 1 to 50.](./c/lab/sum1to50.c)
+34. [Write a program to find the sum of first 50 natural numbers.](./c/lab/first50nat.c)
+35. [Write a program in C to compare two strings without using string library functions.](./c/lab/compareString.c)
+36. [Write a program in C to count the total number of alphabets, digits and special characters in a string.](./c/lab/count.c)
+37. [Write a program in C to get the largest element of an array using the function.](./c/lab/larg.c)
+38. [Write a program in C to print the Fibonacci Series using recursion.](./c/lab/fibRec.c)
+39. [Write a program in C to find the GCD of two numbers uding recursion.](./c/lab/gcdRec.c)
+40. [Write a program in C to count the total number of duplicate elements in an array.](./c/lab/duplicate.c)
+41. [Write a program in C to find the maximum and minimum elements in an array.](./c/lab/maxmin.c)
+42. [Write a program in C to find the sum of the right diagonals of a matrix.](./c/lab/rightDia.c)
+43. [Write a program in C to accept two matrices and check whether they are equal.](./c/lab/matrixCheck.c)
+44. [Write a program in C to check whether a given matrix is an identity matrix.](./c/lab/identity.c)
+45. [C program to add two distances (in inch-feet system) using structures.](./c/lab/inchfeet.c)
+46. [C program to find simple interest.](./c/lab/simpleInterest.c)
+47. [C program to calculate the difference between two time periods.](./c/lab/timediff.c)
+
+
 
 
 ## 2nd Sem
