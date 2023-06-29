@@ -19,6 +19,6 @@ Previous year sem exam C++ programming questions and lab exam question papers al
 [sem2 README](./sem2/README.md)
 
 ## [Sem 3](./sem3)
-Learning various data structures alongside with algorithms. Proper content's will be uploaded soon.
+Learning various data structures alongside with algorithms. Proper content will be uploaded soon.
 
 [sem3 README](./sem3/README.md)
