@@ -1,8 +1,4 @@
-# College Curriculum
-
-## [1st Sem](./c/README.md)
-
-## 2nd Sem
+# 2nd Sem
 
 ## C++ Record
 1. [Program to perform all arithematic operations using default arguments.](./cpp/lab/defaultArg.cpp)
