@@ -1,4 +1,4 @@
-# 2nd Sem
+# Sem 2
 
 ## C++ Record
 1. [Program to perform all arithematic operations using default arguments.](./cpp/lab/defaultArg.cpp)
