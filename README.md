@@ -17,3 +17,8 @@ This sem, we've also learned DBMS with MySQL, contents related to it is due and 
 Previous year sem exam C++ programming questions and lab exam question papers along with it's answers will be soon uploaded as well.
 
 [sem2 README](./sem2/README.md)
+
+## [3rd Sem](./sem3)
+Learning various data structures alongside with algorithms. Proper content's will be uploaded soon.
+
+[sem3 README](./sem3/README.md)
