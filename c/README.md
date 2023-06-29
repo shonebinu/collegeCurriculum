@@ -1,6 +1,6 @@
 # 1st Sem
 
-### Previous Year C lab exam questions with answers 
+## Previous Year C lab exam questions with answers 
 [Previous Year C lab exam question papers](./c/lab/prevQns/)
 
 [**Question Paper 1**](./c/lab/prevQns/1.jpeg)
