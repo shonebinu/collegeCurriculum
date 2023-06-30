@@ -4,8 +4,7 @@ using namespace std;
 
 class Array {
 	public:
-		int array[10];
-		int n;
+		int array[10], n;
 		void traversal();
 		void insertion(int, int);
 };
