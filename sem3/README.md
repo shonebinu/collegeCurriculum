@@ -8,3 +8,4 @@ The programs and algorithms inside this course starts it's array index from 1, e
 3. [Deletion of an element in an array](./deletion.cpp)
 4. [Merging of two sorted arrays](./mergingSortedArrays.cpp)
 5. [Linear Search](./linearSearch.cpp)
+6. [Binary Search](./binarySearch.cpp)
