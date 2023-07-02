@@ -13,3 +13,4 @@ The programs and algorithms inside this course starts it's array index from 1, e
 6. [Binary Search](./binarySearch.cpp) The array need's to be sorted
 #### Sorting
 7. [Selection Sort](./selectionSort.cpp)
+8. [Insertion Sort](./insertionSort.cpp)
