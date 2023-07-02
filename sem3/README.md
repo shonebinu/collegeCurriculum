@@ -10,7 +10,7 @@ The programs and algorithms inside this course starts it's array index from 1, e
 4. [Merging of two sorted arrays](./mergingSortedArrays.cpp)
 #### Searching of Array Elements
 5. [Linear Search](./linearSearch.cpp)
-6. [Binary Search](./binarySearch.cpp) ([Recursive Implementation](./recursiveBinarySearch.cpp)) *The array need to be sorted*
+6. [Binary Search](./binarySearch.cpp) ([Recursive Implementation](./recursiveBinarySearch.cpp)) *The array need to be sorted* [Working](https://www.programiz.com/dsa/binary-search)
 #### Sorting
 7. [Selection Sort](./selectionSort.cpp)
 8. [Insertion Sort](./insertionSort.cpp)
