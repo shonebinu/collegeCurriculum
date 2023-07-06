@@ -4,13 +4,13 @@ The programs and algorithms inside this course starts it's array index from 1, e
 
 ## DSA programs from the course
 ### Array Operations
-1. [Traversal of an array](./traversal.cpp)
-2. [Insertion of an element in an array](./insertion.cpp)
-3. [Deletion of an element in an array](./deletion.cpp)
-4. [Merging of two sorted arrays](./mergingSortedArrays.cpp)
+1. [Traversal of an array](./array/traversal.cpp)
+2. [Insertion of an element in an array](./array/insertion.cpp)
+3. [Deletion of an element in an array](./array/deletion.cpp)
+4. [Merging of two sorted arrays](./array/mergingSortedArrays.cpp)
 #### Searching of Array Elements
-5. [Linear Search](./linearSearch.cpp)
-6. [Binary Search](./binarySearch.cpp) ([Recursive Implementation](./recursiveBinarySearch.cpp))
+5. [Linear Search](./array/linearSearch.cpp)
+6. [Binary Search](./array/binarySearch.cpp) ([Recursive Implementation](./array/recursiveBinarySearch.cpp))
 #### Sorting
-7. [Selection Sort](./selectionSort.cpp)
-8. [Insertion Sort](./insertionSort.cpp)
+7. [Selection Sort](./array/selectionSort.cpp)
+8. [Insertion Sort](./array/insertionSort.cpp)
