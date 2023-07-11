@@ -27,7 +27,7 @@ void QuickArray::quickSort(int beg, int end) {
         low = beg;
         high = end;
         while (low < high) {
-            while(array[low] <= array[pivot] && low < high) low++;
+            while(array[low] <= array[pivot] && low < end) low++;
             while(array[high] > array[pivot]) high--;
             if (low < high) {
                 swap(array, low, high); // swap a[low] & a[high]
