@@ -13,7 +13,7 @@ class Array {
 void Array::create() {
   cout<<"Enter the number of rows and colums: ";
   cin>>r>>c;
-  cout<<"Enter the elements: ";
+  cout<<"Enter the elements: "<<endl;
   for (int i = 0; i < r; i++)
     for (int j = 0; j < c; j++) 
       cin>>array[i][j];
@@ -33,8 +33,8 @@ void Array::sparse() {
   for (int i = 0; i < r; i++) {
     for (int j = 0; j < c; j++) {
       if (array[i][j] != 0) {
-        b[p][0] = i;
-        b[p][1] = j;
+        b[p][0] = i+1;
+        b[p][1] = j+1;
         b[p][2] = array[i][j];
         p++, t++;
       }
@@ -44,7 +44,7 @@ void Array::sparse() {
   b[0][1] = c;
   b[0][2] = t;
   cout<<"\nThe above matrx in 3-tupled form: \n";
-  for (int i = 0; i < t+1; i++) {
+  for (int i = 0; i <= t; i++) {
     for (int j = 0; j < 3; j++)
       cout<<b[i][j]<<" ";
     cout<<endl;

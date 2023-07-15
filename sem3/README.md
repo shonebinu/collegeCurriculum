@@ -17,3 +17,5 @@ The programs and algorithms inside this course starts it's array index from 1, e
 9. [Quick Sort](./array/quickSort.cpp)
 #### Sparse Matrix
 18. [Sparse to 3-tupled form](./array/sparseToTriplet.cpp)
+19. [Is it a sparse matrix?](./array/checkSparse.cpp)
+20. [Transpose of a sparse matrix](./array/transposeSparse.cpp)
