@@ -29,3 +29,38 @@
 
 ## Previous Year Questions and Answers
 [Consolidated previous year question papers](./prevQns/cppDbms.pdf)
+
+### C++ Previous Year Questions with Answers
+1. [Create a class Student with three data members name, age and address and member functions read(), display() and getAge(). Write a C++ program to read the data of n students and display the details of students whose age greater than the average age.](./prevQns/studentAverage.cpp)
+
+### DBMS Previous Year Questions with Answers
+
+#### Question 1
+
+TABLE 1: BOOK
+COLUMN NAME | DATA TYPE | CONSTRAINTS
+--- | --- | --- 
+BookId | Varchar(5) | Primary Key 
+Book_Name | Varchar(20) | Not Null
+Author_Name | Varchar(20) |
+Price | Number(5) |
+
+TABLE 2: PUBLISHER
+COLUMN NAME | DATA TYPE | CONSTRAINTS
+--- | --- | --- 
+Pub_Id | Varchar(5) | Primary Key 
+Pub_Name | Varchar(20) | Not Null
+BookId | Varchar(5) | Foreign Key
+
+##### Write SQL queries for the following:
+
+1. Create the above tables.
+```sql
+CREATE TABLE book(bookid VARCHAR(5) PRIMARY KEY, book_name VARCHAR(20) NOT NULL, author_name VARCHAR(20), price NUMERIC(5, 0));
+
+CREATE TABLE publisher(pub_id VARCHAR(5) PRIMARY KEY, pub_name VARCHAR(20) NOT NULL, bookid VARCHAR(5) REFERENCES book(bookid));
+```
+2. Insert 5 records into each table.
+```sql
+
+```
