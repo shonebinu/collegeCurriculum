@@ -26,3 +26,6 @@
 23. [Program to implement the concept of 'this' pointer.](./lab/thisPointer.cpp)
 24. [Program to implement the concept of virtual function.](./lab/virtualFunction.cpp)
 25. [Program to implement the concept of run time polymorphism.](./lab/runTimePolymorphism.cpp)
+
+## Previous Year Questions and Answers
+[Consolidated previous year question papers](./prevQns/cppDbms.pdf)
