@@ -34,6 +34,7 @@ void Array::sparse() {
   b[0][0] = r;
   b[0][1] = c;
   b[0][2] = t;
+
   cout<<"\nThe above matrx in 3-tupled form: \n";
   for (int i = 0; i <= t; i++) {
     for (int j = 0; j < 3; j++)
@@ -44,6 +45,7 @@ void Array::sparse() {
 
 void Array::transpose() {
   int st[10][10], k = 1;
+
   for (int i = 1; i <= c; i++) 
     for (int j = 1; j <= t; j++) 
       if (b[j][1] == i) {
@@ -55,6 +57,7 @@ void Array::transpose() {
   st[0][0] = c;
   st[0][1] = r;
   st[0][2] = t;
+
   cout<<"\nTranpose is: "<<endl;
   for (int i = 0; i <= t; i++) {
     for (int j = 0; j < 3; j++)
@@ -75,3 +78,4 @@ int main() {
   object.sparse();
   object.transpose();
 }
+
