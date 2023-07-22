@@ -9,8 +9,16 @@ class Array {
     int array[10][10], m, n, triplet[10][3];
     void create();
     void toTriplet();
-    //void tripletAdd(Array);
+    void tripletAdd(Array);
 };
+
+int main() {
+  Array array;
+  array.create();
+  cout<<endl<<"The sparse matrix in triplet form: \n";
+  array.toTriplet();
+  return 0;
+}
 
 void Array::create() {
   cout<<"Enter the number of rows and columns: ";
@@ -41,11 +49,3 @@ void Array::toTriplet() {
       cout<<endl;
     }
   }
-
-int main() {
-  Array array;
-  array.create();
-  cout<<endl<<"The sparse matrix in triplet form: \n";
-  array.toTriplet();
-  return 0;
-}
