@@ -14,11 +14,9 @@ int main() {
   Array array, array1;
 
   array.create();
-  cout<<endl<<"The sparse matrix in triplet form: \n";
   array.toTriplet();
 
   array1.create();
-  cout<<endl<<"The sparse matrix in triplet form: \n";
   array1.toTriplet();
 
   array.tripletAdd(array1);
@@ -49,6 +47,7 @@ void Array::toTriplet() {
     triplet[0][2] = k - 1; // no of non-zero elements  
 
     //printing the triplet form
+  cout<<endl<<"The sparse matrix in triplet form: \n";
     for (int i = 0; i < k; i++) {
       for (int j = 0; j < 3; j++)
         cout<<triplet[i][j]<<" ";
