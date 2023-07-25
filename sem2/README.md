@@ -32,9 +32,24 @@
 
 ### C++ Previous Year Questions with Answers
 1. [Create a class Student with three data members name, age and address and member functions read(), display() and getAge(). Write a C++ program to read the data of n students and display the details of students whose age greater than the average age.](./prevQns/studentAverage.cpp)
-2. Create a class Time with data members hour, minute and second and member functions readTime(), displayTime() and an overloaded operator '+'. Write a C++ program to find the sum of two Time objects. [use 24 hours format].
-
-
+2. Create a class Time with data members hour, minute and second and member functions readTime(), displayTime() and an overloaded operator '+'. Write a C++ program to find the sum of two Time objects. (use 24 hours format).
+3. Create a class Rectangle with data members length and breadth and member function to calculate the Area (length*breadth). The class has two constructors (1) having one parameter (assumme same values for hoth lengtlh and bread1h) and (2) having two parameters. Write C++ program to create objects of the Rectangle class having one and two parameters and print their area.
+4.  Design a base class Person with data members ame, address and phone_number. Derive a class Employee with data member emp_number from 
+Person. Derive a class Manager with data members designation department_name and basic_salary from Employee. Write a CPP program to 
+accept all details of 'n' managers.
+5. Write a C++ program to design a class Shape with data member volume and three overloaded member functions to find the volume of cube, cuboid and cone. Use another member function display to print the volume of three shapes. [volume of cube=side^3,volume of cuboid=length *width *height,volume of cone = 3.14*7adius*radiusheight/3].
+6. Create a class Vector contains data members a, b, c as coefficients of i,j,k and member functions to read and display vector objects. Write a C++ program to find the difference between two vector objects using the concept operator overloading with friend function. 
+Eg. (ai+ b1j t eik)- (ai + bj + ek) = (a -a)i + (bi-b:)j (C c:)k.
+7.Create classes 
+            Student (Data members: stud_id, stud_name, stud_age 
+            Member functions: readstud(), displaystud()) 
+            Course (Data members : course_name, department 
+            Member functions : readcourse(), displaycourse() ) and 
+            Admission (Data members: adm_no, adm_date 
+            Member functions: readadm(), displayadm() ).
+   Write a CPP program to inherit student and course classes to admission.
+8.Write a CPP program to perform addition of two Matrix objects by operator overloading using friend function.
+   
 ### DBMS Previous Year Questions with Answers
 
 #### Question 1
