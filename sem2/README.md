@@ -32,6 +32,8 @@
 
 ### C++ Previous Year Questions with Answers
 1. [Create a class Student with three data members name, age and address and member functions read(), display() and getAge(). Write a C++ program to read the data of n students and display the details of students whose age greater than the average age.](./prevQns/studentAverage.cpp)
+2. [Create a class Time with data members hour, minute and secomd and member functions readTime(), displayTime() and an overloaded operator '+'. Write a C++ program to find the sum of two Time objects. (use 24 hours format).]().
+
 
 ### DBMS Previous Year Questions with Answers
 
@@ -64,3 +66,34 @@ CREATE TABLE publisher(pub_id VARCHAR(5) PRIMARY KEY, pub_name VARCHAR(20) NOT N
 ```sql
 
 ```
+
+#### QUESTION 2
+
+TABLE 1: COLLEGE
+COLUMN NAME | DATA TYPE | CONSTRAINTS
+--- | --- | ---
+COLL_CODE | NUMER(5) | PRIMARY KEY
+COLL_NAME | VARCHAR(25) | NOT NULL
+COLL_PLACE | VARCHAR(25) |
+STARTING_DATE | DATE 
+CONTACT NUMBER | VARCHAR(10)
+
+TABLE 2:COURSE
+COLUMN NAME | DATA TYPE | CONSTRAINTS
+--- | --- | ---
+COLL_CODE | NUMER(5) | PRIMARY KEY
+COLL_NAME | VARCHAR(25) | NOT NULL
+DEPARTMENT | VARCHAR(25)
+C_CODE | NUMBER(5) | FOREIGN KEY
+
+##### Write SQL queries for the following:
+
+1. Create the above tables.
+```sql
+
+```
+2. Insert 5 records into each table.
+```sql
+
+```
+
