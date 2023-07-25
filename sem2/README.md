@@ -38,7 +38,7 @@
 Person. Derive a class Manager with data members designation department_name and basic_salary from Employee. Write a CPP program to 
 accept all details of 'n' managers.
 5. Write a C++ program to design a class Shape with data member volume and three overloaded member functions to find the volume of cube, cuboid and cone. Use another member function display to print the volume of three shapes. [volume of cube=side^3,volume of cuboid=length *width *height,volume of cone = 3.14*7adius*radiusheight/3].
-6. Create a class Vector contains data members a, b, c as coefficients of i,j,k and member functions to read and display vector objects. Write a C++ program to find the difference between two vector objects using the concept operator overloading with friend function 
+6. Create a class Vector contains data members a, b, c as coefficients of i,j,k and member functions to read and display vector objects. Write a C++ program to find the difference between two vector objects using the concept operator overloading with friend function. 
 Eg. (ai+ b1j t eik)- (ai + bj + ek) = (a -a)i + (bi-b:)j (C c:)k.
 7.Create classes 
             Student (Data members: stud_id, stud_name, stud_age 
@@ -50,7 +50,6 @@ Eg. (ai+ b1j t eik)- (ai + bj + ek) = (a -a)i + (bi-b:)j (C c:)k.
    Write a CPP program to inherit student and course classes to admission.
 8.Write a CPP program to perform addition of two Matrix objects by operator overloading using friend function.
    
- 
 ### DBMS Previous Year Questions with Answers
 
 #### Question 1
