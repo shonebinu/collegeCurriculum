@@ -157,7 +157,7 @@ C_CODE | NUMBER(5) | FOREIGN KEY
 
 ```
 
-### Question 3
+#### Question 3
 
 TABLE 1: DEPARTMENT
 COLUMN NAME | DATA TYPE | CONSTRAINTS
@@ -196,7 +196,7 @@ SUBJECT | VARCAHR(15) |
 
 ```
 
-### Question 4
+#### Question 4
 
 TABLE 1: MANAGER
 COLUMN NAME | DATA TYPE | CONSTRAINTS
@@ -237,7 +237,7 @@ DEPT_NAME | VARACHAR(10) | NOT NULL
 
 ``` 
 
-### Question 5
+#### Question 5
 
 TABLE 1: SAILOR
 COLUMN NAME | DATA TYPE | CONSTRAINTS
@@ -279,7 +279,7 @@ SAIL_ID | NUMBER | FOREIGN KEY
 ```
 
 
-### Question 6
+#### Question 6
 
 TABLE 1: PRODUCT
 COLUMN NAME | DATA TYPE | CONSTRAINTS
@@ -320,7 +320,7 @@ PRODUCT_NUM | VARCHAR(6) |FOREIGN KEY
 
 ```
 
-### Question 7
+#### Question 7
 
 TABLE 1: CUSTOMER
 COLUMN NAME | DATA TYPE | CONSTRAINTS
@@ -363,7 +363,7 @@ ORDER_DATE | NUMBER
 
 ```
 
-### Question 8
+#### Question 8
 
 TABLE 1: EMPLOYEE
 COLUMN NAME | DATA TYPE | CONSTRAINTS
