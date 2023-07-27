@@ -59,9 +59,9 @@
 
 2. Create a class Time with data members hour, minute and second and member functions readTime(), displayTime() and an overloaded operator '+'. Write a C++ program to find the sum of two Time objects. (use 24 hours format).
 
-3. Create a class Rectangle with data members length and breadth and member function to calculate the Area (length*breadth). The class has two constructors (1) having one parameter (assumme same values for hoth lengtlh and bread1h) and (2) having two parameters. Write C++ program to create objects of the Rectangle class having one and two parameters and print their area.
+3. Create a class Rectangle with data members length and breadth and member function to calculate the Area (length*breadth). The class has two constructors (1) having one parameter (assumme same values for both length and breadth) and (2) having two parameters. Write C++ program to create objects of the Rectangle class having one and two parameters and print their area.
 
-4. Design a base class Person with data members ame, address and phone_number. Derive a class Employee with data member emp_number from Person. Derive a class Manager with data members designation department_name and basic_salary from Employee. Write a CPP program to accept all details of 'n' managers.
+4. Design a base class Person with data members name, address and phone_number. Derive a class Employee with data member emp_number from Person. Derive a class Manager with data members designation department_name and basic_salary from Employee. Write a CPP program to accept all details of 'n' managers.
 
 5. Write a C++ program to design a class Shape with data member volume and three overloaded member functions to find the volume of cube, cuboid and cone. Use another member function display to print the volume of three shapes. `volume of cube=side^3, volume of cuboid=length*width*height, volume of cone = 3.14*radius*radius*height/3`.
 
@@ -102,6 +102,18 @@ CREATE TABLE publisher(pub_id VARCHAR(5) PRIMARY KEY, pub_name VARCHAR(20) NOT N
 ```sql
 
 ```
+3. Display the details of book published by "PHI"
+```sql
+
+```
+4. Delete all books having price greater than 5000.
+```sql
+
+```
+5. List the details of books and its publishers in ascending order of their price.
+```sql
+
+``````
 
 #### Question 2
 
@@ -132,6 +144,141 @@ C_CODE | NUMBER(5) | FOREIGN KEY
 ```sql
 
 ```
+3. Display the details of all colleges offering BCA course in the ascending order of college name.
+```sql
+
+```
+4. Delete records of colleges started on or before 01/01/1990.
+```sql
+
+```
+5. Display the Count of colleges in the same place
+```sql
+
+```
+
+###Question 3
+
+TABLE 1: DEPARTMENT
+COLUMN NAME | DATA TYPE | CONSTRAINTS
+--- | --- | ---
+DEPT_ID | VARCHAR(10) | PRIMARY KEY
+DEPT_NAME | VARCAHR(15) | NOT NULL
+
+TABLE 2: TEACHER
+COLUMN NAME | DATA TYPE | CONSTRAINTS
+--- | --- | ---
+TEACH_ID | VARCAHR(10) | PRIMARY KEY
+NAME | VARCHAR(15) | NOT NULL
+DEPT_ID |VARCHAR(10) | FOREIGN KEY
+SUBJECT | VARCAHR(15) |
+
+##### Write SQL queries for the following:
+
+1. Create the above tables.
+```sql
+
+```
+2. Insert 5 records into each table.
+```sql
+
+```
+3. Update subject of the teacher to 'COMPUTER NETWORK' whose TEACH_ID is "TI05.
+```sql
+
+```
+4. Display the number of teachers in each department.
+```sql
+
+```
+5. Display the details of all teachers in the Department of Computer Applictions.
+```sql
+
+```
+
+###Question 4
+
+TABLE 1: MANAGER
+COLUMN NAME | DATA TYPE | CONSTRAINTS
+--- | --- | ---
+MGR_ID | VARCAHR(5) | PRIMARY KEY
+NAME | VARCHAR(25) | NOT NULL
+DEPT_ID | NUMBER(5) | FOREIGN KEY
+CONTACT_NO | NUMBER(10) |
+SALARY | NUMBER(10) |
+
+TABLE 2: DEPARTMENT
+COLUMN NAME | DATA TYPE | CONSTRAINTS
+--- | --- | ---
+DEPT_ID | NUMER(5) | PRIMARY KEY
+DEPT_NAME | VARACHAR(10) | NOT NULL
+
+
+##### Write SQL queries for the following:
+
+1. Create the above tables.
+```sql
+
+```
+2. Insert 5 records into each table.
+```sql
+
+```
+3. Allow an increment of Rs. 2500 for managers whose salary is less than 50000
+```sql
+
+```
+4. Display the details of managers who is getting maximum salary.
+```sql
+
+```
+5. Display the details of manager who are working in sales department.
+```sql
+
+``` 
+
+###Question 5
+
+TABLE 1: SAILOR
+COLUMN NAME | DATA TYPE | CONSTRAINTS
+--- | --- | ---
+SAIL_ID | NUMBER | PRIMARY KEY 
+SAILOR_NAME | VARACHAR(15) | NOT NULL
+AGE | NUMBER |
+
+TABLE 2: RESERVE_BOAT
+COLUMN NAME | DATA TYPE | CONSTRAINTS
+--- | --- | ---
+BOAT_ID | VARCHAR(10) | PRIMARY KEY
+BOAT_NAME | VARCHAR(15) | NOT NULL
+BOAT_COLOR | VARACHAR(10) | RED,BLUE,GREEN
+SAIL_ID | NUMBER | FOREIGN KEY
+
+
+##### Write SQL queries for the following:
+
+1. Create the above tables.
+```sql
+
+```
+2. Insert 5 records into each table.
+```sql
+
+```
+3. Display all the endiing with "s".
+```sq1
+
+```
+4. Display the details who have reserved a 'red' and 'green' boat.
+```sq1
+
+```
+5. Create a view contains list of all sailors whose age in between 25 and 45.
+```sq1
+
+```
+
+
 
 
  
