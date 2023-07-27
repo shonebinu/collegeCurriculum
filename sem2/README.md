@@ -157,7 +157,7 @@ C_CODE | NUMBER(5) | FOREIGN KEY
 
 ```
 
-###Question 3
+### Question 3
 
 TABLE 1: DEPARTMENT
 COLUMN NAME | DATA TYPE | CONSTRAINTS
@@ -196,7 +196,7 @@ SUBJECT | VARCAHR(15) |
 
 ```
 
-###Question 4
+### Question 4
 
 TABLE 1: MANAGER
 COLUMN NAME | DATA TYPE | CONSTRAINTS
@@ -237,7 +237,7 @@ DEPT_NAME | VARACHAR(10) | NOT NULL
 
 ``` 
 
-###Question 5
+### Question 5
 
 TABLE 1: SAILOR
 COLUMN NAME | DATA TYPE | CONSTRAINTS
@@ -275,6 +275,132 @@ SAIL_ID | NUMBER | FOREIGN KEY
 ```
 5. Create a view contains list of all sailors whose age in between 25 and 45.
 ```sq1
+
+```
+
+
+### Question 6
+
+TABLE 1: PRODUCT
+COLUMN NAME | DATA TYPE | CONSTRAINTS
+--- | --- | ---
+PRODUCT_NUM | VARCHAR(6) | PRIMARY KEY
+PRODUCT_NAME | VARCHAR(15) | NOT NULL
+QTY_IN_HAND | NUMBER(8) | 
+UNIT_PRICE | NUMBER(8,2) | NOT NULL,CANNOT BE ZERO
+
+TABLE 2: SALES
+COLUMN NAME | DATA TYPE | CONSTRAINTS
+--- | --- | ---
+BILL_NUM | VARCHAR(6) | PRIMARY KEY
+QUANTITY | NUMBER(8) | 
+PRODUCT_NUM | VARCHAR(6) |FOREIGN KEY
+
+
+##### Write SQL queries for the following:
+
+1. Create the above tables.
+```sql
+
+```
+2. Insert 5 records into each table.
+```sql
+
+```
+3. List the Product num, name and Quantity for the Bill_ num K10T.
+```sql
+
+```
+4. Increase the product price of all products by 10%.
+```sql
+
+```
+5. Display the details of products having highest unit price.
+```sql
+
+```
+
+### Question 7
+
+TABLE 1: CUSTOMER
+COLUMN NAME | DATA TYPE | CONSTRAINTS
+--- | --- | ---
+CUST_ID | VARCHAR(10) | PRIMARY KEY
+NAME | VARCHAR(15) | NOT NULL
+LOCATION | VARCHAR(15) |
+AGE | NUMBER |
+
+TABLE 2: ORDERS
+COLUMN NAME | DATA TYPE | CONSTRAINTS
+--- | --- | ---
+ORDER_ID | VARACHAR(10) | PRIMARY KEY
+PRODUCT | VARACHAR(15) | NOT NULL
+CUST_ID | VARCHAR(10) | FOREIGN KEY
+ORDER_DATE | DATE 
+ORDER_DATE | NUMBER
+
+
+##### Write SQL queries for the following:
+
+1. Create the above tables.
+```sql
+
+```
+2. Insert 5 records into each table.
+```sql
+
+```
+3. Change the location of customer to Kochi whose cust_id is CTI00
+```sql
+
+```
+5. Display the details of younger customer in the group.
+```sql
+
+``` 
+7. Display name, location, order_amt and order_dale of custoner who placed the highest order.
+```sql
+
+```
+
+### Question 8
+
+TABLE 1: EMPLOYEE
+COLUMN NAME | DATA TYPE | CONSTRAINTS
+--- | --- | ---
+EMP_NUM | NUMBER(5) | PRIMARY KEY
+EMP_NAME | VARCHAR(25) | NOT NULL
+DESIGNATION | VARCHAR(20) |
+SALARY | NUMBER(5)
+
+TABLE 2: PROJECT
+COLUMN NAME | DATA TYPE | CONSTRAINTS
+--- | --- | ---
+PROJ_ID | VARCHAR(5) | PRIMARY KEY
+PROJ_NAME | VARCHAR(25) | 
+EMP_NUM | NUMBER(5) | FOREIGN KEY
+
+
+##### Write SQL queries for the following:
+
+1. Create the above tables.
+```sql
+
+```
+2. Insert 5 records into each table.
+```sql
+
+```
+3. Display the details of employees in alphabetical order of EMP_NAME whose name contains "kumar".
+```sql
+
+``` 
+4. List EMP_NUM. EMP_NAME and DESIGNATION of employees who have not assigned any projects.
+```sql
+
+```
+5. Display the details of project in which MANAGER with highest pay Works.
+```sql
 
 ```
 
