@@ -21,7 +21,7 @@ class String1 {
         }
         void join(String1 &a, String1 &b) {
             length = a.length + b.length;
-            delete name;
+            delete name; // I think the course meant `delete a.name; delete b.name;`
             name = new char[length + 1];
             strcpy(name, a.name);
             strcat(name, b.name);
