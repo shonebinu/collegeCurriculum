@@ -71,9 +71,7 @@ volume of cuboid = length*width*height
 ```
 
 6. Create a class Vector contains data members a, b, c as coefficients of i,j,k and member functions to read and display vector objects. Write a C++ program to find the difference between two vector objects using the concept operator overloading with friend function. Eg:
-<code>(a<sub>1</sub>i + b<sub>1</sub>j + c<sub>1</sub>k) - (a<sub>2</sub>i + b<sub>2</sub>j + c<sub>2</sub>k) = (a<sub>1</sub> - a<sub>2</sub>)i + (b<sub>1</sub> - b<sub>2</sub>)j + (c<sub>1</sub> - c<sub>2</sub>)k
-</code>
-
+<code>(a<sub>1</sub>i + b<sub>1</sub>j + c<sub>1</sub>k) - (a<sub>2</sub>i + b<sub>2</sub>j + c<sub>2</sub>k) = (a<sub>1</sub> - a<sub>2</sub>)i + (b<sub>1</sub> - b<sub>2</sub>)j + (c<sub>1</sub> - c<sub>2</sub>)k</code>
 
 
 7. Create classes       <br><ins>**Student**</ins> (Data members: stud_id, stud_name, stud_age  <br>Member functions: readstud(), displaystud())   <br><ins>**Course</ins>** (Data members : course_name, department  <br>Member functions : readcourse(), displaycourse() ) and  <br><ins>**Admission</ins>** (Data members: adm_no, adm_date    <br>Member functions: readadm(), displayadm() ). <br> *Write a CPP program to inherit student and course classes to admission.*
