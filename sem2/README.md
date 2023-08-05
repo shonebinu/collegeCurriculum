@@ -99,7 +99,8 @@ BookId | Varchar(5) | Foreign Key
 
 1. Create the above tables.
 ```sql
-CREATE TABLE book(bookid VARCHAR(5) PRIMARY KEY, book_name VARCHAR(20) NOT NULL, author_name VARCHAR(20), price NUMERIC(5, 0));
+CREATE TABLE book(bookid VARCHAR(5) PRIMARY KEY, book_name VARCHAR(20) NOT NULL,
+author_name VARCHAR(20), price NUMERIC(5, 0));
 
 CREATE TABLE publisher(pub_id VARCHAR(5) PRIMARY KEY, pub_name VARCHAR(20) NOT NULL,
 bookid VARCHAR(5) REFERENCES book(bookid));
