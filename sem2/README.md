@@ -55,7 +55,7 @@
 [Consolidated previous year question papers](./prevQns/cppDbms.pdf)
 
 ### C++ Previous Year Questions with Answers
-1. [Create a class Student with three data members name, age and address and member functions read(), display() and getAge(). Write a C++ program to read the data of n students and display the details of students whose age greater than the average age.](./prevQns/studentAverage.cpp)
+1. [Create a class Student with three data members **name**, **age** and **address** and member functions **read()**, **display()** and **getAge()**. Write a C++ program to read the data of n students and display the details of students whose age greater than the average age.](./prevQns/studentAverage.cpp)
 
 2. [Create a class Time with data members hour, minute and second and member functions readTime(), displayTime() and an overloaded operator '+'. Write a C++ program to find the sum of two Time objects. (use 24 hours format).](./prevQns/timeAddition.cpp)
 
@@ -70,7 +70,7 @@ volume of cone = 3.14*radius*radius*height/3
 volume of cuboid = length*width*height
 ```
 
-6. Create a class Vector contains data members a, b, c as coefficients of i,j,k and member functions to read and display vector objects. Write a C++ program to find the difference between two vector objects using the concept operator overloading with friend function. Eg:
+6. Create a class Vector contains data members a, b, c as coefficients of i, j, k and member functions to read and display vector objects. Write a C++ program to find the difference between two vector objects using the concept operator overloading with friend function. Eg:
 <code>(a<sub>1</sub>i + b<sub>1</sub>j + c<sub>1</sub>k) - (a<sub>2</sub>i + b<sub>2</sub>j + c<sub>2</sub>k) = (a<sub>1</sub> - a<sub>2</sub>)i + (b<sub>1</sub> - b<sub>2</sub>)j + (c<sub>1</sub> - c<sub>2</sub>)k</code>
 
 
