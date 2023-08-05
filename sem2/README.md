@@ -74,7 +74,7 @@ volume of cuboid = length*width*height
 <code>(a<sub>1</sub>i + b<sub>1</sub>j + c<sub>1</sub>k) - (a<sub>2</sub>i + b<sub>2</sub>j + c<sub>2</sub>k) = (a<sub>1</sub> - a<sub>2</sub>)i + (b<sub>1</sub> - b<sub>2</sub>)j + (c<sub>1</sub> - c<sub>2</sub>)k</code>
 
 
-7. Create classes       <br><ins>**Student**</ins> <br>Data members : *stud_id, stud_name, stud_age*  <br>Member functions: *readstud(), displaystud()*   <br><ins>**Course</ins>** <br>Data members : *course_name, department*  <br>Member functions : *readcourse(), displaycourse()* <br><ins>**Admission</ins>** <br>Data members : *adm_no, adm_date*    <br>Member functions: *readadm(), displayadm()*. <br><br> <ins>Write a CPP program to inherit student and course classes to admission.</ins>
+7. Create classes       <br><br><ins>**Student**</ins> <br>Data members : *stud_id, stud_name, stud_age*  <br>Member functions: *readstud(), displaystud()*   <br><ins>**Course</ins>** <br>Data members : *course_name, department*  <br>Member functions : *readcourse(), displaycourse()* <br><ins>**Admission</ins>** <br>Data members : *adm_no, adm_date*    <br>Member functions: *readadm(), displayadm()*. <br><br> <ins>Write a CPP program to inherit student and course classes to admission.</ins>
 
 8. Write a CPP program to perform addition of two Matrix objects by operator overloading using friend function.
    
