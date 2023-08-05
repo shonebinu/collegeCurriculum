@@ -70,7 +70,7 @@ volume of cone = 3.14*radius*radius*height/3
 volume of cuboid = length*width*height
 ```
 
-6. Create a class **Vector** contains data members **a, b, c** as coefficients of **i, j, k** and member functions to **read** and **display** vector objects. Write a C++ program to find the difference between two vector objects using the concept **operator overloading with friend function**. Eg:
+6. [Create a class **Vector** contains data members **a, b, c** as coefficients of **i, j, k** and member functions to **read** and **display** vector objects. Write a C++ program to find the difference between two vector objects using the concept **operator overloading with friend function**. Eg:](./prevQns/vector.cpp)
 <code>(a<sub>1</sub>i + b<sub>1</sub>j + c<sub>1</sub>k) - (a<sub>2</sub>i + b<sub>2</sub>j + c<sub>2</sub>k) = (a<sub>1</sub> - a<sub>2</sub>)i + (b<sub>1</sub> - b<sub>2</sub>)j + (c<sub>1</sub> - c<sub>2</sub>)k</code>
 
 
