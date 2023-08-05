@@ -59,7 +59,7 @@
 
 2. [Create a class Time with data members hour, minute and second and member functions readTime(), displayTime() and an overloaded operator '+'. Write a C++ program to find the sum of two Time objects. (use 24 hours format).](./prevQns/timeAddition.cpp)
 
-3. Create a class Rectangle with data members length and breadth and member function to calculate the Area (length*breadth). The class has two constructors (1) having one parameter (assumme same values for both length and breadth) and (2) having two parameters. Write C++ program to create objects of the Rectangle class having one and two parameters and print their area.
+3. [Create a class Rectangle with data members length and breadth and member function to calculate the Area (length*breadth). The class has two constructors (1) having one parameter (assumme same values for both length and breadth) and (2) having two parameters. Write C++ program to create objects of the Rectangle class having one and two parameters and print their area.](./prevQns/area.cpp)
 
 4. Design a base class Person with data members name, address and phone_number. Derive a class Employee with data member emp_number from Person. Derive a class Manager with data members designation department_name and basic_salary from Employee. Write a CPP program to accept all details of 'n' managers.
 
