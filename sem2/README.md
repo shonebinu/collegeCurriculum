@@ -61,7 +61,7 @@
 
 3. [Create a class Rectangle with data members length and breadth and member function to calculate the Area (length*breadth). The class has two constructors (1) having one parameter (assumme same values for both length and breadth) and (2) having two parameters. Write C++ program to create objects of the Rectangle class having one and two parameters and print their area.](./prevQns/area.cpp)
 
-4. Design a base class Person with data members name, address and phone_number. Derive a class Employee with data member emp_number from Person. Derive a class Manager with data members designation department_name and basic_salary from Employee. Write a CPP program to accept all details of 'n' managers.
+4. [Design a base class Person with data members name, address and phone_number. Derive a class Employee with data member emp_number from Person. Derive a class Manager with data members designation, department_name and basic_salary from Employee. Write a CPP program to accept all details of 'n' managers.](./prevQns/multiLevel.cpp)
 
 5. Write a C++ program to design a class Shape with data member volume and three overloaded member functions to find the volume of cube, cuboid and cone. Use another member function display to print the volume of three shapes. `volume of cube=side^3, volume of cuboid=length*width*height, volume of cone = 3.14*radius*radius*height/3`.
 
