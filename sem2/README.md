@@ -101,7 +101,8 @@ BookId | Varchar(5) | Foreign Key
 ```sql
 CREATE TABLE book(bookid VARCHAR(5) PRIMARY KEY, book_name VARCHAR(20) NOT NULL, author_name VARCHAR(20), price NUMERIC(5, 0));
 
-CREATE TABLE publisher(pub_id VARCHAR(5) PRIMARY KEY, pub_name VARCHAR(20) NOT NULL, bookid VARCHAR(5) REFERENCES book(bookid));
+CREATE TABLE publisher(pub_id VARCHAR(5) PRIMARY KEY, pub_name VARCHAR(20) NOT NULL,
+bookid VARCHAR(5) REFERENCES book(bookid));
 ```
 2. Insert 5 records into each table.
 ```sql
