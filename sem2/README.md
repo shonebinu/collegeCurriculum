@@ -76,7 +76,7 @@ volume of cuboid = length*width*height
 
 7. Create classes       <br><br><ins>**Student**</ins> <br>Data members : *stud_id, stud_name, stud_age*  <br>Member functions: *readstud(), displaystud()*   <br><ins>**Course</ins>** <br>Data members : *course_name, department*  <br>Member functions : *readcourse(), displaycourse()* <br><ins>**Admission</ins>** <br>Data members : *adm_no, adm_date*    <br>Member functions: *readadm(), displayadm()*. <br><br> <ins>[Write a CPP program to inherit student and course classes to admission.](./prevQns/multiple.cpp)</ins>
 
-8. Write a CPP program to perform addition of two Matrix objects by operator overloading using friend function.
+8. [Write a CPP program to perform addition of two Matrix objects by operator overloading using friend function.](./prevQns/matrixAdd.cpp)
    
 ### DBMS Previous Year Questions with Answers
 
