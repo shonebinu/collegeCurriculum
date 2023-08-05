@@ -63,7 +63,9 @@
 
 4. [Design a base class Person with data members name, address and phone_number. Derive a class Employee with data member emp_number from Person. Derive a class Manager with data members designation, department_name and basic_salary from Employee. Write a CPP program to accept all details of 'n' managers.](./prevQns/multiLevel.cpp)
 
-5. Write a C++ program to design a class Shape with data member volume and three overloaded member functions to find the volume of cube, cuboid and cone. Use another member function display to print the volume of three shapes. ```volume of cube=side^3, volume of cuboid=length*width*height, volume of cone = 3.14*radius*radius*height/3```.
+5. Write a C++ program to design a class Shape with data member volume and three overloaded member functions to find the volume of cube, cuboid and cone. Use another member function display to print the volume of three shapes. ```volume of cube=side^3 
+volume of cuboid=length*width*height
+volume of cone = 3.14*radius*radius*height/3```.
 
 6. Create a class Vector contains data members a, b, c as coefficients of i,j,k and member functions to read and display vector objects. Write a C++ program to find the difference between two vector objects using the concept operator overloading with friend function. <br> Eg. (ai+ b1j t eik)- (ai + bj + ek) = (a -a)i + (bi-b:)j (C c:)k.
 
