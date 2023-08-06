@@ -233,37 +233,68 @@ TABLE 1: DEPARTMENT
 COLUMN NAME | DATA TYPE | CONSTRAINTS
 --- | --- | ---
 DEPT_ID | VARCHAR(10) | PRIMARY KEY
-DEPT_NAME | VARCAHR(15) | NOT NULL
+DEPT_NAME | VARCHAR(15) | NOT NULL
 
 TABLE 2: TEACHER
 COLUMN NAME | DATA TYPE | CONSTRAINTS
 --- | --- | ---
-TEACH_ID | VARCAHR(10) | PRIMARY KEY
+TEACH_ID | VARCHAR(10) | PRIMARY KEY
 NAME | VARCHAR(15) | NOT NULL
 DEPT_ID |VARCHAR(10) | FOREIGN KEY
-SUBJECT | VARCAHR(15) |
+SUBJECT | VARCHAR(15) |
 
 ##### Write SQL queries for the following:
 
 1. Create the above tables.
 ```sql
+CREATE TABLE department (
+    dept_id VARCHAR(10) PRIMARY KEY,
+    dept_name VARCHAR(15) NOT NULL
+);
 
+CREATE TABLE teacher (
+    teach_id VARCHAR(10),
+    name VARCHAR(15) NOT NULL,
+    dept_id VARCHAR(10),
+    subject VARCHAR(15),
+    FOREIGN KEY (dept_id) REFERENCES department(dept_id),
+    PRIMARY KEY (teach_id)
+);
 ```
 2. Insert 5 records into each table.
 ```sql
+INSERT INTO department (dept_id, dept_name)
+VALUES
+    ('D001', 'Computer Application'),
+    ('D002', 'Mathematics'),
+    ('D003', 'Physics'),
+    ('D004', 'English'),
+    ('D005', 'History');
 
+INSERT INTO teacher (teach_id, name, dept_id, subject)
+VALUES
+    ('TI01', 'John Smith', 'D001', 'Database Management'),
+    ('TI02', 'Jane Doe', 'D002', 'Calculus'),
+    ('TI03', 'Michael Johnson', 'D001', 'Software Engineering'),
+    ('TI04', 'Emily Williams', 'D003', 'Physics I'),
+    ('TI05', 'Robert Brown', 'D001', 'Networking');
 ```
-3. Update subject of the teacher to 'COMPUTER NETWORK' whose TEACH_ID is "TI05.
+3. Update subject of the teacher to 'COMPUTER NETWORK' whose TEACH_ID is "TI05".
 ```sql
-
+UPDATE teacher SET subject='Computer Network'
+WHERE teach_id='TI05';
 ```
 4. Display the number of teachers in each department.
 ```sql
-
+SELECT dept_name, COUNT(name) AS teacher_count FROM department JOIN 
+teacher ON department.dept_id = teacher.dept_id
+GROUP BY dept_name;
 ```
-5. Display the details of all teachers in the Department of Computer Applictions.
+5. Display the details of all teachers in the Department of Computer Application.
 ```sql
-
+SELECT * FROM teacher WHERE dept_id 
+IN
+(SELECT dept_id FROM department WHERE dept_name = 'Computer Application');
 ```
 
 #### Question 4
