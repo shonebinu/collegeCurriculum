@@ -518,34 +518,73 @@ AGE | NUMBER |
 TABLE 2: ORDERS
 COLUMN NAME | DATA TYPE | CONSTRAINTS
 --- | --- | ---
-ORDER_ID | VARACHAR(10) | PRIMARY KEY
-PRODUCT | VARACHAR(15) | NOT NULL
+ORDER_ID | VARCHAR(10) | PRIMARY KEY
+PRODUCT | VARCHAR(15) | NOT NULL
 CUST_ID | VARCHAR(10) | FOREIGN KEY
 ORDER_DATE | DATE 
-ORDER_DATE | NUMBER
+ORDER_AMT | NUMBER
 
 
 ##### Write SQL queries for the following:
 
 1. Create the above tables.
 ```sql
+CREATE TABLE customer(cust_id VARCHAR(10) PRIMARY KEY,
+name VARCHAR(15) NOT NULL,
+location VARCHAR(15),
+age INT);
 
+CREATE TABLE orders(order_id VARCHAR(10) PRIMARY KEY,
+product VARCHAR(15) NOT NULL,
+cust_id VARCHAR(10),
+order_date DATE,
+order_amt INT,
+FOREIGN KEY(cust_id) REFERENCES customer(cust_id));
 ```
 2. Insert 5 records into each table.
 ```sql
+INSERT INTO customer (cust_id, name, location, age)
+VALUES
+    ('C1100', 'John Doe', 'New York', 30),
+    ('C1200', 'Jane Smith', 'Los Angeles', 25),
+    ('C1300', 'Michael Johnson', 'Chicago', 22),
+    ('C1400', 'Emily Williams', 'Miami', 28),
+    ('C1500', 'Robert Brown', 'San Francisco', 35);
 
+INSERT INTO orders (order_id, product, cust_id, order_date, order_amt)
+VALUES
+    ('O101', 'Product 1', 'C1100', '2023-08-01', 1000),
+    ('O102', 'Product 2', 'C1200', '2023-08-02', 750),
+    ('O103', 'Product 1', 'C1300', '2023-08-03', 1200),
+    ('O104', 'Product 3', 'C1400', '2023-08-04', 500),
+    ('O105', 'Product 2', 'C1500', '2023-08-05', 1800),
+    ('O106', 'Product 1', 'C1100', '2023-08-06', 800),
+    ('O107', 'Product 3', 'C1300', '2023-08-07', 1500),
+    ('O108', 'Product 2', 'C1200', '2023-08-08', 900),
+    ('O109', 'Product 1', 'C1500', '2023-08-09', 1600),
+    ('O110', 'Product 2', 'C1400', '2023-08-10', 700);
 ```
-3. Change the location of customer to Kochi whose cust_id is CTI00
+3. Change the location of customer to Kochi whose cust_id is "C1100".
 ```sql
-
+UPDATE customer SET location='Kochi' WHERE cust_id='C1100'; 
 ```
 5. Display the details of younger customer in the group.
 ```sql
+SELECT * FROM customer
+ORDER BY age ASC
+LIMIT 1;
 
+-- or --
+
+SELECT * FROM customer
+WHERE age = (SELECT MIN(age) FROM customer);
 ``` 
-7. Display name, location, order_amt and order_dale of custoner who placed the highest order.
+7. Display name, location, order_amt and order_date of customer who placed the highest order.
 ```sql
-
+SELECT name, location, order_amt, order_date FROM customer 
+JOIN orders ON orders.cust_id = customer.cust_id 
+ORDER BY orders.order_amt DESC
+LIMIT 1;
 ```
 
 #### Question 8
@@ -580,7 +619,7 @@ EMP_NUM | NUMBER(5) | FOREIGN KEY
 ```sql
 
 ``` 
-4. List EMP_NUM. EMP_NAME and DESIGNATION of employees who have not assigned any projects.
+4. List EMP_NUM, EMP_NAME and DESIGNATION of employees who have not assigned any projects.
 ```sql
 
 ```
