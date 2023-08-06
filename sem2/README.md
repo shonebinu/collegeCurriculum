@@ -490,7 +490,8 @@ VALUES
 ```
 3. List the Product_num, name and Quantity for the Bill_num "K101".
 ```sql
-SELECT p.product_num, p.product_name, s.quantity FROM product AS p
+SELECT p.product_num, p.product_name, s.quantity 
+FROM product p -- alias can be used without the keyword 'AS'
 JOIN sales AS s ON p.product_num = s.product_num 
 WHERE s.bill_num = 'K101';
 ```
@@ -609,28 +610,70 @@ EMP_NUM | NUMBER(5) | FOREIGN KEY
 
 1. Create the above tables.
 ```sql
-
+CREATE TABLE employee
+ (emp_num INT PRIMARY KEY,
+  emp_name VARCHAR(25) NOT NULL,
+  designation VARCHAR(20),
+  salary INT);
+  
+CREATE TABLE project
+(proj_id VARCHAR(5) PRIMARY KEY,
+ proj_name VARCHAR(25), 
+ emp_num INT REFERENCES employee(emp_num)); -- foreign key
 ```
 2. Insert 5 records into each table.
 ```sql
+INSERT INTO employee (emp_num, emp_name, designation, salary)
+VALUES
+    (101, 'John Kumar', 'Manager', 60000),
+    (102, 'Jane Smith', 'Developer', 45000),
+    (103, 'Michael Kumar', 'Analyst', 55000),
+    (104, 'Emily Kumar', 'Designer', 50000),
+    (105, 'Robert Brown', 'Tester', 48000),
+    (106, 'Kumar Shekar', 'Debugger', 50000),
+    (107, 'Shone Binu', 'Manager', 40000);
 
+INSERT INTO project (proj_id, proj_name, emp_num)
+VALUES
+    ('P001', 'Project A', 101),
+    ('P002', 'Project B', 102),
+    ('P003', 'Project C', 103),
+    ('P004', 'Project D', 104),
+    ('P005', 'Project E', 105),
+    ('P006', 'Project X', 107),
+    ('P007', 'Project S', 101);
 ```
 3. Display the details of employees in alphabetical order of EMP_NAME whose name contains "kumar".
 ```sql
-
+SELECT * FROM employee
+WHERE LOWER(emp_name) LIKE '%kumar%'
+ORDER BY emp_name;
 ``` 
 4. List EMP_NUM, EMP_NAME and DESIGNATION of employees who have not assigned any projects.
 ```sql
-
+SELECT emp_num, emp_name, designation FROM employee
+WHERE emp_num NOT IN (SELECT emp_num FROM project);
 ```
-5. Display the details of project in which MANAGER with highest pay Works.
+5. Display the details of project in which MANAGER with highest pay works.
 ```sql
+SELECT * FROM project WHERE emp_num = 
+(SELECT emp_num FROM employee WHERE salary =
+(SELECT MAX(salary) FROM employee));
 
+-- or --
+
+SELECT * FROM project WHERE emp_num = 
+(SELECT emp_num FROM employee 
+ ORDER BY salary DESC
+ LIMIT 1);
+
+ -- or --
+
+SELECT p.* FROM project p -- 'AS' not compulsory for alias
+JOIN (
+    SELECT emp_num, salary -- salary not required here
+    FROM employee
+    ORDER BY salary DESC
+    LIMIT 1
+) AS e ON p.emp_num = e.emp_num;
 ```
-
-
-
-
- 
-
-
