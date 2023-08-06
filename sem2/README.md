@@ -504,6 +504,12 @@ UPDATE product SET unit_price = unit_price + (unit_price / 10);
 SELECT * FROM product WHERE
 unit_price = (SELECT MAX(unit_price)
 FROM product);
+
+-- or --
+
+SELECT * FROM product 
+ORDER BY unit_price DESC
+LIMIT 1;
 ```
 
 #### Question 7
@@ -602,7 +608,7 @@ TABLE 2: PROJECT
 COLUMN NAME | DATA TYPE | CONSTRAINTS
 --- | --- | ---
 PROJ_ID | VARCHAR(5) | PRIMARY KEY
-PROJ_NAME | VARCHAR(25) | 
+PROJ_tfNAME | VARCHAR(25) | 
 EMP_NUM | NUMBER(5) | FOREIGN KEY
 
 
