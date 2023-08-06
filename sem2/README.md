@@ -127,7 +127,14 @@ VALUES
 ```
 3. Display the details of book published by "PHI"
 ```sql
+SELECT * FROM book WHERE bookid
+IN (SELECT bookid FROM publisher WHERE pub_name = 'PHI');
 
+-- or --
+
+SELECT b.bookid, b.book_name, b.author_name, b.price FROM book AS b 
+JOIN publisher AS p ON b.bookid = p.bookid 
+WHERE p.pub_name = 'PHI';
 ```
 4. Delete all books having price greater than 5000.
 ```sql
