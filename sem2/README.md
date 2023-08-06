@@ -377,7 +377,7 @@ COLUMN NAME | DATA TYPE | CONSTRAINTS
 --- | --- | ---
 BOAT_ID | VARCHAR(10) | PRIMARY KEY
 BOAT_NAME | VARCHAR(15) | NOT NULL
-BOAT_COLOR | VARCHAR(10) | RED,BLUE,GREEN
+BOAT_COLOR | VARCHAR(10) | RED, BLUE, GREEN
 SAIL_ID | NUMBER | FOREIGN KEY
 
 
@@ -401,19 +401,38 @@ CREATE TABLE reserve_boat (
 ```
 2. Insert 5 records into each table.
 ```sql
-
+INSERT INTO sailor (sail_id, sailor_name, age)
+VALUES
+    (1, 'John', 30),
+    (2, 'Jane', 28),
+    (3, 'Michael', 35),
+    (4, 'Emily', 22),
+    (5, 'Robert', 40);
+   
+INSERT INTO reserve_boat (boat_id, boat_name, boat_color, sail_id)
+VALUES
+    ('B001', 'Boat 1', 'red', 1),
+    ('B002', 'Boat 2', 'blue', 2),
+    ('B003', 'Boat 3', 'green', 3),
+    ('B004', 'Boat 4', 'red', 4),
+    ('B005', 'Boat s', 'green', 5);
 ```
-3. Display all the endiing with "s".
-```sq1
-
+3. Display all the boat names ending with "s".
+```sql
+SELECT * FROM reserve_boat 
+WHERE boat_name LIKE '%s';
 ```
-4. Display the details who have reserved a 'red' and 'green' boat.
-```sq1
-
+4. Display the details of sailors who have reserved a 'red' and 'green' boat.
+```sql
+SELECT * FROM sailor WHERE sail_id IN
+(SELECT sail_id FROM reserve_boat 
+WHERE boat_color IN ('red', 'green'));
 ```
 5. Create a view contains list of all sailors whose age in between 25 and 45.
-```sq1
-
+```sql
+CREATE VIEW sailors_age_view AS
+SELECT * FROM sailor 
+WHERE age BETWEEN 25 AND 45;
 ```
 
 
@@ -425,7 +444,7 @@ COLUMN NAME | DATA TYPE | CONSTRAINTS
 PRODUCT_NUM | VARCHAR(6) | PRIMARY KEY
 PRODUCT_NAME | VARCHAR(15) | NOT NULL
 QTY_IN_HAND | NUMBER(8) | 
-UNIT_PRICE | NUMBER(8,2) | NOT NULL,CANNOT BE ZERO
+UNIT_PRICE | NUMBER(8, 2) | NOT NULL, CANNOT BE ZERO
 
 TABLE 2: SALES
 COLUMN NAME | DATA TYPE | CONSTRAINTS
@@ -439,23 +458,51 @@ PRODUCT_NUM | VARCHAR(6) |FOREIGN KEY
 
 1. Create the above tables.
 ```sql
+CREATE TABLE product(product_num VARCHAR(6) PRIMARY KEY,
+  product_name VARCHAR(15) NOT NULL,
+  qty_in_hand INT,
+  unit_price NUMERIC(8, 2) NOT NULL,
+  CHECK(unit_price != 0));
 
+CREATE TABLE sales(bill_num VARCHAR(6) PRIMARY KEY,
+  quantity INT,
+  product_num VARCHAR(6),
+  FOREIGN KEY(product_num) REFERENCES product(product_num));
 ```
 2. Insert 5 records into each table.
 ```sql
+INSERT INTO product (product_num, product_name, qty_in_hand, unit_price)
+VALUES
+    ('P001', 'Product 1', 100, 50.00),
+    ('P002', 'Product 2', 75, 30.00),
+    ('P003', 'Product 3', 200, 20.00),
+    ('P004', 'Product 4', 50, 100.00),
+    ('P005', 'Product 5', 300, 10.00);
 
+
+INSERT INTO sales (bill_num, quantity, product_num)
+VALUES
+    ('K101', 5, 'P001'),
+    ('K102', 3, 'P002'),
+    ('K103', 10, 'P003'),
+    ('K104', 2, 'P004'),
+    ('K105', 8, 'P005');
 ```
-3. List the Product num, name and Quantity for the Bill_ num K10T.
+3. List the Product_num, name and Quantity for the Bill_num "K101".
 ```sql
-
+SELECT p.product_num, p.product_name, s.quantity FROM product AS p
+JOIN sales AS s ON p.product_num = s.product_num 
+WHERE s.bill_num = 'K101';
 ```
 4. Increase the product price of all products by 10%.
 ```sql
-
-```
-5. Display the details of products having highest unit price.
+UPDATE product SET unit_price = unit_price + (unit_price / 10);
+````
+5. Display the details of product having highest unit price.
 ```sql
-
+SELECT * FROM product WHERE
+unit_price = (SELECT MAX(unit_price)
+FROM product);
 ```
 
 #### Question 7
