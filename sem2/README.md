@@ -109,7 +109,21 @@ bookid VARCHAR(5) REFERENCES book(bookid));
 ```
 2. Insert 5 records into each table.
 ```sql
+INSERT INTO book (bookid, book_name, author_name, price)
+VALUES
+    ('B001', 'Book 1', 'Author 1', 2000),
+    ('B002', 'Book 2', 'Author 2', 3500),
+    ('B003', 'Book 3', 'Author 3', 5000),
+    ('B004', 'Book 4', 'Author 4', 6000),
+    ('B005', 'Book 5', 'Author 5', 4500);
 
+INSERT INTO publisher (pub_id, pub_name, bookid)
+VALUES
+    ('P001', 'PHI', 'B001'),
+    ('P002', 'Publisher 2', 'B002'),
+    ('P003', 'Publisher 3', 'B003'),
+    ('P004', 'Publisher 4', 'B004'),
+    ('P005', 'Publisher 5', 'B005');
 ```
 3. Display the details of book published by "PHI"
 ```sql
