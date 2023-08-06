@@ -189,19 +189,42 @@ FOREIGN KEY(c_code) REFERENCES college(coll_code));
 ```
 2. Insert 5 records into each table.
 ```sql
+INSERT INTO college (coll_code, coll_name, coll_place, starting_date, contact_number)
+VALUES
+    (1, 'ABC College', 'City A', '1990-05-15', '1234567890'),
+    (2, 'XYZ College', 'City B', '2000-09-20', '9876543210'),
+    (3, 'PQR College', 'City A', '1985-03-10', '5555555555'),
+    (4, 'LMN College', 'City C', '2005-11-28', '1112223333'),
+    (5, 'EFG College', 'City B', '1995-07-08', '4447778888');
 
+INSERT INTO course (course_code, course_name, department, c_code)
+VALUES
+    (101, 'BCA', 'Computer Science', 1),
+    (102, 'BBA', 'Management', 2),
+    (103, 'BSc', 'Science', 3),
+    (104, 'BCA', 'Computer Science', 4),
+    (105, 'MCA', 'Computer Science', 4),
+    (106, 'MBA', 'Management', 5);
 ```
 3. Display the details of all colleges offering BCA course in the ascending order of college name.
 ```sql
-
+SELECT * FROM college WHERE coll_code
+IN 
+(SELECT c_code FROM course WHERE course_name = 'BCA')
+ORDER BY coll_name ASC;
 ```
 4. Delete records of colleges started on or before 01/01/1990.
 ```sql
+DELETE FROM course WHERE c_code IN
+(SELECT coll_code FROM college WHERE starting_date <= '1990-01-01');
 
+DELETE FROM college WHERE starting_date <= '1990-01-01';
 ```
-5. Display the Count of colleges in the same place
+5. Display the Count of colleges in the same place.
 ```sql
-
+SELECT coll_place, COUNT(coll_name) 
+AS college_count FROM college
+GROUP BY coll_place;
 ```
 
 #### Question 3
