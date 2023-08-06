@@ -163,13 +163,13 @@ COLL_CODE | NUMBER(5) | PRIMARY KEY
 COLL_NAME | VARCHAR(25) | NOT NULL
 COLL_PLACE | VARCHAR(25) |
 STARTING_DATE | DATE 
-CONTACT NUMBER | VARCHAR(10)
+CONTACT_NUMBER | VARCHAR(10)
 
 TABLE 2: COURSE
 COLUMN NAME | DATA TYPE | CONSTRAINTS
 --- | --- | ---
-COLL_CODE | NUMBER(5) | PRIMARY KEY
-COLL_NAME | VARCHAR(25) | NOT NULL
+COURSE_CODE | NUMBER(5) | PRIMARY KEY
+COURSE_NAME | VARCHAR(25) | NOT NULL
 DEPARTMENT | VARCHAR(25)
 C_CODE | NUMBER(5) | FOREIGN KEY
 
@@ -177,7 +177,15 @@ C_CODE | NUMBER(5) | FOREIGN KEY
 
 1. Create the above tables.
 ```sql
+CREATE TABLE college(coll_code INT, coll_name VARCHAR(25) NOT NULL, 
+coll_place VARCHAR(25), starting_date DATE, contact_number VARCHAR(10),
+PRIMARY KEY(coll_code));
 
+CREATE TABLE course(course_code INT PRIMARY KEY, 
+course_name VARCHAR(25) NOT NULL,
+department VARCHAR(25),
+c_code INT,
+FOREIGN KEY(c_code) REFERENCES college(coll_code));
 ```
 2. Insert 5 records into each table.
 ```sql
