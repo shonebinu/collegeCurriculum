@@ -138,11 +138,20 @@ WHERE p.pub_name = 'PHI';
 ```
 4. Delete all books having price greater than 5000.
 ```sql
+-- Delete records from the PUBLISHER table first
+DELETE FROM publisher
+WHERE bookid IN (SELECT bookid FROM book WHERE price > 5000);
 
+-- Now, delete records from the BOOK table
+DELETE FROM book
+WHERE price > 5000;
 ```
 5. List the details of books and its publishers in ascending order of their price.
 ```sql
-
+SELECT b.bookid, b.book_name, b.author_name, b.price, p.pub_name 
+FROM book AS b
+JOIN publisher AS p ON b.bookid = p.bookid 
+ORDER BY price ASC;
 ``````
 
 #### Question 2
