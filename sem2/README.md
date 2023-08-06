@@ -125,7 +125,7 @@ VALUES
     ('P004', 'Publisher 4', 'B004'),
     ('P005', 'Publisher 5', 'B005');
 ```
-3. Display the details of book published by "PHI"
+3. Display the details of book published by "PHI".
 ```sql
 SELECT * FROM book WHERE bookid
 IN (SELECT bookid FROM publisher WHERE pub_name = 'PHI');
