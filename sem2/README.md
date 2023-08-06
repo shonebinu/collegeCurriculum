@@ -318,24 +318,49 @@ DEPT_NAME | VARACHAR(10) | NOT NULL
 ##### Write SQL queries for the following:
 
 1. Create the above tables.
-```sql
+```sql 
+CREATE TABLE department(dept_id INT PRIMARY KEY,
+dept_name VARCHAR(10) NOT NULL);
 
+CREATE TABLE manager(mgr_id VARCHAR(5) PRIMARY KEY,
+name VARCHAR(25) NOT NULL, 
+dept_id INT,
+contact_no INT,
+salary INT,
+FOREIGN KEY(dept_id) REFERENCES department(dept_id));
 ```
 2. Insert 5 records into each table.
 ```sql
+INSERT INTO department (dept_id, dept_name)
+VALUES
+    (1, 'Sales'),
+    (2, 'Marketing'),
+    (3, 'Finance'),
+    (4, 'HR'),
+    (5, 'Operations');
 
+INSERT INTO manager (mgr_id, name, dept_id, contact_no, salary)
+VALUES
+    ('M001', 'John Smith', 1, 1234567890, 55000),
+    ('M002', 'Jane Doe', 2, 9876543210, 60000),
+    ('M003', 'Michael Johnson', 1, 5555555555, 48000),
+    ('M004', 'Emily Williams', 3, 1112223333, 72000),
+    ('M005', 'Robert Brown', 1, 4447778888, 49000);
 ```
 3. Allow an increment of Rs. 2500 for managers whose salary is less than 50000
 ```sql
-
+UPDATE manager SET salary = salary + 2500 
+WHERE salary < 50000;
 ```
 4. Display the details of managers who is getting maximum salary.
 ```sql
-
+SELECT * FROM manager WHERE salary = 
+(SELECT MAX(salary) FROM manager);
 ```
 5. Display the details of manager who are working in sales department.
 ```sql
-
+SELECT * FROM manager WHERE dept_id IN
+(SELECT dept_id FROM department WHERE dept_name = 'Sales');
 ``` 
 
 #### Question 5
@@ -344,7 +369,7 @@ TABLE 1: SAILOR
 COLUMN NAME | DATA TYPE | CONSTRAINTS
 --- | --- | ---
 SAIL_ID | NUMBER | PRIMARY KEY 
-SAILOR_NAME | VARACHAR(15) | NOT NULL
+SAILOR_NAME | VARCHAR(15) | NOT NULL
 AGE | NUMBER |
 
 TABLE 2: RESERVE_BOAT
@@ -352,7 +377,7 @@ COLUMN NAME | DATA TYPE | CONSTRAINTS
 --- | --- | ---
 BOAT_ID | VARCHAR(10) | PRIMARY KEY
 BOAT_NAME | VARCHAR(15) | NOT NULL
-BOAT_COLOR | VARACHAR(10) | RED,BLUE,GREEN
+BOAT_COLOR | VARCHAR(10) | RED,BLUE,GREEN
 SAIL_ID | NUMBER | FOREIGN KEY
 
 
@@ -360,7 +385,19 @@ SAIL_ID | NUMBER | FOREIGN KEY
 
 1. Create the above tables.
 ```sql
-
+CREATE TABLE sailor (
+    sail_id INT PRIMARY KEY,
+    sailor_name VARCHAR(15) NOT NULL,
+    age INT
+);                
+                    
+CREATE TABLE reserve_boat (
+    boat_id VARCHAR(10) PRIMARY KEY,
+    boat_name VARCHAR(15) NOT NULL,
+    boat_color VARCHAR(10) CHECK (boat_color IN ('red', 'blue', 'green')),
+    sail_id INT,
+    FOREIGN KEY (sail_id) REFERENCES sailor(sail_id)
+);
 ```
 2. Insert 5 records into each table.
 ```sql
