@@ -21,4 +21,4 @@ The programs and algorithms inside this course starts it's array index from 1, e
 20. [Transpose of a sparse matrix](./array/transposeSparse.cpp) 
 21. [Sparse Matrix Addition](./array/sparseAddition.cpp) It's different from the course provided, modified it to be more easy.
 #### Generic Array Problems 
-22. [Polynomial Additin](./array/polynomial.cpp)
+22. [Polynomial Addition](./array/polynomial.cpp)
