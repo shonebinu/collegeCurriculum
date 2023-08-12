@@ -12,9 +12,9 @@ In the 2nd sem, learned the fundamentals of Object Oriented Programming (OOP) pa
 
 The [sem2](./sem2) directory consists of lab record programs (ordered) as well as some misc personal C++ programs and notes.
 
-This sem, we've also learned DBMS with MySQL, contents related to it is due and will be uploaded when I'm out of my work.
+This sem, we've also learned DBMS with MySQL, record programs of SQL hasn't been uploaded since I'm not free as of now and If anyone can, please contribute.
 
-Previous year sem exam C++ programming questions and lab exam question papers along with it's answers will be soon uploaded as well.
+Previous year's C++ and DBMS lab exam question papers along with answers has been uploaded for reference. 
 
 [sem2 README](./sem2/README.md)
 
