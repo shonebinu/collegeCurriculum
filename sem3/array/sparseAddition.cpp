@@ -44,7 +44,8 @@ void Array::toTriplet() {
       triplet[k][2] = array[i][j];
       k++;
       }
-    triplet[0][2] = k - 1; // no of non-zero elements  
+  
+  triplet[0][2] = k - 1; // no of non-zero elements  
 
     //printing the triplet form
   cout<<endl<<"The sparse matrix in triplet form: \n";
