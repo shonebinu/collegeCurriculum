@@ -27,7 +27,7 @@ void Array::linearSearch(int item) {
         }
     }
     if (loc == -1) cout<<"Unsuccessful search"<<endl;
-    else cout<<a[loc]<<" is found at the array index"<<loc<<endl;
+    else cout<<a[loc]<<" is found at the array index "<<loc<<endl;
 }
 
 int main() {
