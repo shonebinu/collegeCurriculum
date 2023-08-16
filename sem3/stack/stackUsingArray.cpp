@@ -6,7 +6,7 @@ using namespace std;
 
 class Stack {
   public:
-    int array[MAX], top;
+    int array[MAX], top = -1;
     void push();
     void pop();
     void traversal();
@@ -31,7 +31,7 @@ void Stack::pop() {
   else {
     item = array[top];
     top--;
-    cout<< endl << item << " is deleted";   
+    cout<< endl << item << " is deleted" << endl;   
   }
 }
 
@@ -50,7 +50,6 @@ void Stack::traversal() {
 int main() {
   Stack stack;
   int ch;
-  stack.top = -1;
   cout << "\t Stack Operations" << endl;
   cout << "\t -----------------" << endl;
   while (1) {
@@ -68,6 +67,8 @@ int main() {
         stack.traversal();
         break;
       case 4: 
+        return 0;
+      default: 
         return 0;
     }
   }
