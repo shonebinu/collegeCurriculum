@@ -25,3 +25,4 @@ The programs and algorithms inside this course starts it's array index from 1, e
 
 ### Stack Operations 
 23. [Stack Implementation using Array](./stack/stackUsingArray.cpp)
+24. [Postfix Evaluation](./stack/postfix_evaluation.cpp)

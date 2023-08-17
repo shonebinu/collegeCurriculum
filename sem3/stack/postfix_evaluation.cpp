@@ -2,88 +2,89 @@
 #include <cstring>
 #include <cctype>
 #include <cmath>
-// Change the header's according to the compiler
 
-#define MAX 5
+#define MAX_STACK_SIZE 5
 
 using namespace std;
 
-class Stack {
-  public:
-    char p[20];
-    int top, s[MAX];
-    Stack() { top = -1; }
-    void push(int);
-    int pop();
-    void eval();
+class PostfixEvaluator {
+public:
+    char postfixExpression[20];
+    int stackTop, operandStack[MAX_STACK_SIZE];
+
+    PostfixEvaluator() {
+        stackTop = -1;
+    }
+
+    void pushOperand(int);
+    int popOperand();
+    void evaluateExpression();
 };
 
-
-void Stack::push(int item) {
-  if (top == MAX - 1)
-    cout << "Overflow";
-  else {
-    top++;
-    s[top] = item;
-  }
+void PostfixEvaluator::pushOperand(int value) {
+    if (stackTop == MAX_STACK_SIZE - 1) {
+        cout << "Stack Overflow";
+    } else {
+        stackTop++;
+        operandStack[stackTop] = value;
+    }
 }
 
-int Stack::pop() {
-  int item;
-  if (top == -1) {
-    cout << "Underflow";
-    return 0;
-  }
-  else {
-    item = s[top];
-    top--;
-    return item;
-  }
+int PostfixEvaluator::popOperand() {
+    int value;
+    if (stackTop == -1) {
+        cout << "Stack Underflow";
+        return 0;
+    } else {
+        value = operandStack[stackTop];
+        stackTop--;
+        return value;
+    }
 }
 
-void Stack::eval() {
-  int p1, p2, result, len, t, val;
-  cout << "Enter the postfix expression: ";
-  cin >> p;
-  len = strlen(p);
-  for (int i = 0; i < len; i++) {
-    if (isalpha(p[i])) {
-      cout << "Enter the value of " << p[i] << " : ";
-      cin >> val;
-      push(val);
+void PostfixEvaluator::evaluateExpression() {
+    int operand1, operand2, result, expressionLength, tokenValue, tokenOperand;
+    cout << "Enter the postfix expression: ";
+    cin >> postfixExpression;
+    expressionLength = strlen(postfixExpression);
+    for (int i = 0; i < expressionLength; i++) {
+        if (isalpha(postfixExpression[i])) {
+            cout << "Enter the value of " << postfixExpression[i] << " : ";
+            cin >> tokenValue;
+            pushOperand(tokenValue);
+        } else {
+            operand1 = popOperand();
+            operand2 = popOperand();
+            switch (postfixExpression[i]) {
+                case '+':
+                    result = operand2 + operand1;
+                    break;
+                case '-':
+                    result = operand2 - operand1;
+                    break;
+                case '*':
+                    result = operand2 * operand1;
+                    break;
+                case '/':
+                    result = operand2 / operand1;
+                    break;
+                case '^':
+                    result = pow(operand2, operand1);
+                    break;
+            }
+            pushOperand(result);
+        }
     }
-    else {
-      p1 = pop();
-      p2 = pop();
-      switch (p[i]) {
-        case '+':
-          t = p2 + p1;
-          break;
-        case '-': 
-          t = p2 - p1;
-          break;
-        case '*':
-          t = p2 * p1;
-          break;
-        case '/':
-          t = p2 / p1;
-          break;
-        case '^': 
-          t = pow(p2, p1);
-          break;
-      }
-      push(t);
-    }
-  }
 
-  result = pop();
-  cout << "The result is : "<<result;
+    int finalResult = popOperand();
+    cout << "The result is : " << finalResult;
 }
 
 int main() {
-  Stack ob;
-  cout << "\tEVALUATION OF POSTFIX\n";
-  cout << "\t_____________________\n";
-  ob.eval();
-  return 0;
+    PostfixEvaluator evaluator;
+    cout << "\tPOSTFIX EXPRESSION EVALUATION\n";
+    cout << "\t______________________________\n";
+    evaluator.evaluateExpression();
+    return 0;
 }
+
