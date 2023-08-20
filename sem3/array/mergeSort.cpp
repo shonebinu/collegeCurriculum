@@ -9,12 +9,6 @@ int main() {
   int length = 5;
   int list[] = { 100, 20, 80, 60, 40 };
 
-  // Bubble sort
-  for (int i = length - 1; i > 0; i--) 
-    for (int j = 0; j < i; j++)
-      if (list[j] > list[j + 1]) 
-        swap(list[j], list[j + 1]);
-  // END  
 
   for (int i = 0; i < length; i++)
     cout << list[i] << '\t';
@@ -27,3 +21,4 @@ void swap(int& a, int& b) {
   a = b;
   b = temp;
 }
+
