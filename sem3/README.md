@@ -15,7 +15,7 @@ The programs and algorithms inside this course starts it's array index from 1, e
 7. [Selection Sort](./array/selectionSort.cpp)
 8. [Insertion Sort](./array/insertionSort.cpp)
 9. [Quick Sort](./array/quickSort.cpp) ([Quick Sort with Partition function](./array/partitionQuickSort.cpp))
-##### Not included in the curriculumn, but to complete the important sorting algorithms 
+##### Not included in the curriculum, but to cover the important sorting algorithms 
   a. [Bubble Sort](./array/bubbleSort.cpp)
 #### Sparse Matrix
 18. [Sparse to 3-tupled form](./array/sparseToTriplet.cpp)
