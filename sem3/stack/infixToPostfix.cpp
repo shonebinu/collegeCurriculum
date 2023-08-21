@@ -1,6 +1,5 @@
 #include <iostream>
 #include <cstring>
-#include <iterator>
 
 using namespace std;
 
@@ -79,7 +78,7 @@ void Stack::inpos() {
   }
   postfix[j] = '\0';
   cout << "Postfix expression is: ";
-  cout << postfix;
+  cout << postfix << endl;
 }
 
 
