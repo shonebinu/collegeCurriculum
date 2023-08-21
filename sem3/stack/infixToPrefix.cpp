@@ -40,7 +40,7 @@ void Stack::inpre() {
     int len, i, j = 0;
     char item;
     
-    reverse(infix, infix + strlen(infix));
+    reverse(infix, infix + strlen(infix)); // strrev isn't available 
     strcat(infix, "(");
     push(')');
   
