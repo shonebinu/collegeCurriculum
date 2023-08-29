@@ -25,7 +25,7 @@ void Stack::push() {
 }
 
 void Stack::pop() {
-  int item;
+  int item; // idk why this is here, there's no use
   if (top == -1)
     cout<<"Stack Underflow";
   else {
