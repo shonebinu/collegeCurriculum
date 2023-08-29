@@ -17,7 +17,7 @@ class Stack {
 int main() {
   char toRev[MAX];
   cout << "Enter the string to reverse: ";
-  cin >> toRev;
+  cin.getline(toRev, MAX); // Read the entire input line
   
   Stack s;
   int length = 0;
@@ -29,6 +29,7 @@ int main() {
   char rev[MAX];
   for (int i = 0; i < length; i++) 
     rev[i] = s.pop();
+  rev[length] = '\0'; // Add the null - terminator
 
   cout << "The Reverse of the given string is: " << rev << endl;
   
