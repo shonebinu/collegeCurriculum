@@ -64,7 +64,7 @@ void Queue::traversal() {
     cout << "Queue is empty";
 
   else {
-    cout << endl << "Elements are: ";
+    cout << endl << "Elements are: " << endl;
 
     for (i = front; i <= rear; i++)
       cout << queue[i] << endl;
