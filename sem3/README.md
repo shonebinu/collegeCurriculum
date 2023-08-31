@@ -17,6 +17,7 @@ The programs and algorithms inside this course starts it's array index from 1, e
 9. [Quick Sort](./array/quickSort.cpp) ([Quick Sort with Partition function](./array/partitionQuickSort.cpp))
 ##### Not included in the curriculum, but to cover the important sorting algorithms 
   a. [Bubble Sort](./array/bubbleSort.cpp)
+
   b. # https://www.programiz.com/dsa/merge-sort
 #### Sparse Matrix
 18. [Sparse to 3-tupled form](./array/sparseToTriplet.cpp)
