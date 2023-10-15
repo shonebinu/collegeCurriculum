@@ -20,7 +20,7 @@ class Queue {
 void Queue::enqueue() {
   int item;
 
-  if (rear == MAX) {
+  if (rear == MAX - 1) {
     cout << "Queue is full";
     return;
   }

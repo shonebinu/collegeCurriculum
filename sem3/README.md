@@ -36,4 +36,4 @@ The programs and algorithms inside this course starts it's array index from 1, e
 27. [Reversing a string using Stack](./stack/reverseString.cpp)
 
 ### Queue Operations
-28. [Queue Implementation using Array](./queue/queueArray.cpp) # not working fine , implement something with shifting
+28. [Queue Implementation using Array](./queue/queueArray.cpp)
