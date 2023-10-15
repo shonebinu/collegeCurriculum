@@ -77,5 +77,6 @@ int main() {
   }
   object.sparse();
   object.transpose();
+  return 0;
 }
 
