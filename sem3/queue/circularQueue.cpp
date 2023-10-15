@@ -5,25 +5,26 @@ using namespace std;
 #define MAX 5
 
 class Circular {
-    public:
-        int front, rear, a[MAX];
-        void insertion();
-        void deletion();
-        void traversal();
-        Circular() {
-            front = rear = 0;
-        }
+public:
+    int front, rear, a[MAX];
+    void insertion();
+    void deletion();
+    void traversal();
+    Circular() {
+        front = rear = -1; // Initialize front and rear to -1 for an empty queue
+    }
 };
 
 void Circular::insertion() {
     int item;
-    if (front == rear % MAX + 1) {
+    if ((rear + 1) % MAX == front) {
         cout << "Queue is full";
         return;
-    } else if (rear == 0) {
-        front = rear = 1;
+    }
+    if (front == -1) {
+        front = rear = 0;
     } else {
-        rear = (rear % MAX) + 1;
+        rear = (rear + 1) % MAX;
     }
     cout << "Enter the item to be inserted: ";
     cin >> item;
@@ -31,41 +32,31 @@ void Circular::insertion() {
 }
 
 void Circular::deletion() {
-    int item;
-    if (front == 0) {
+    if (front == -1) {
         cout << "Queue is empty";
         return;
     }
-    item = a[front];
-    if (front == rear) 
-        front = rear = 0;
-    else 
-        front = front % MAX + 1;
+    int item = a[front];
+    if (front == rear) {
+        front = rear = -1;
+    } else {
+        front = (front + 1) % MAX;
+    }
     cout << item << " is deleted";
 }
 
 void Circular::traversal() {
-    int i;
-    if (front == 0) {
+    if (front == -1) {
         cout << "Queue is empty";
         return;
     }
     cout << "The elements are: ";
-    if (rear < front) {
-        for (i = 1; i <= rear; i++)
-            cout << a[i];
-        for (i = rear + 1; i < front; i++)
-            cout << " - ";
-        for (i = front; i <= MAX; i++)
-            cout << a[i];
-    } else {
-        for (i = 1; i < front; i++)
-            cout << " - ";
-        for (i = front; i <= rear; i++)
-            cout << a[i];
-        for (i = rear + 1; i <= MAX; i++)
-            cout << " - ";
-    }
+    int i = front;
+    do {
+        cout << a[i] << " ";
+        i = (i + 1) % MAX;
+    } while (i != (rear + 1) % MAX);
+    cout << endl;
 }
 
 int main() {
