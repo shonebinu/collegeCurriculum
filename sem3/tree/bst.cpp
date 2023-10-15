@@ -39,16 +39,19 @@ void BST::create() {
         else
             insert(root, ptr);
 
-        cout << "Do you want to continue\n";
+        cout << "Do you want to continue(1/0): ";
         cin >> ch;
     }
     while (ch == 1);
-    cout << "\nThe inorder traversal is:";
+    cout << "\nThe inorder traversal is: " << endl;
     inorder(root);
-    cout << "\nThe preorder traversal is:";
+    cout << endl;
+    cout << "\nThe preorder traversal is: " << endl;
     preorder(root);
-    cout << "\nThe postorder traversal is:";
+    cout << endl;
+    cout << "\nThe postorder traversal is: " << endl;
     postorder(root);
+    cout << endl;
 }
 
 void BST::insert(node * r, node * p) {
