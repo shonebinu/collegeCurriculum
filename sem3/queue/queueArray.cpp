@@ -21,7 +21,7 @@ void Queue::enqueue() {
   int item;
 
   if (rear == MAX - 1) {
-    cout << "Queue is full";
+    cout << endl << "Queue is full";
     return;
   }
 
@@ -41,7 +41,7 @@ void Queue::dequeue() {
   int item;
 
   if (front == 0) {
-    cout << "Queue is empty";
+    cout << endl << "Queue is empty";
     return;
   }
 
@@ -61,7 +61,7 @@ void Queue::traversal() {
   int i;
 
   if (front == 0)
-    cout << "Queue is empty";
+    cout << endl << "Queue is empty";
 
   else {
     cout << endl << "Elements are: " << endl;
@@ -75,7 +75,7 @@ int main() {
   Queue q;
   int c;
 
-  while (1) {
+  while (true) {
     cout << "\n\t MENU \n";
     cout << "1. INSERTION \n2. DELETION \n3. TRAVERSAL \n4. EXIT \n";
     cout << "Enter the choice: ";
@@ -86,6 +86,7 @@ int main() {
       case 2: q.dequeue(); break;
       case 3: q.traversal(); break;
       case 4: return 0;
+      default: cout << "Invalid choice";
     }
   }
 }
