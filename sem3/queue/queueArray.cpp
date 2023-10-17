@@ -53,7 +53,7 @@ void Queue::dequeue() {
   else 
     front++;
 
-  cout << "Item is deleted";
+  cout << item << " is deleted";
 }
 
 
