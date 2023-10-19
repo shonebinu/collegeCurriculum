@@ -43,7 +43,7 @@ The programs and algorithms inside this course starts it's array index from 1, e
 30. [Singly Linked List](./linkedList/sll.cpp)
 31. [Doubly Linked List](./linkedList/dll.cpp)
 32. [Circular Linked List](./linkedList/circularLL.cpp)
-33. Circular Doubly Linked List
+33. [Circular Doubly Linked List](./linkedList/cdll.cpp)
 34. Stack using Linked List (Linked Stack)
 35. Queue using Linked List (Linked Queue)
 36. Interchanging two nodes in a Linked List
