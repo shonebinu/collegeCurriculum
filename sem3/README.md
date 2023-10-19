@@ -46,9 +46,9 @@ The programs and algorithms inside this course starts it's array index from 1, e
 33. [Circular Doubly Linked List](./linkedList/cdll.cpp)
 34. [Stack using Linked List (Linked Stack)](./linkedList/stackLinked.cpp)
 35. [Queue using Linked List (Linked Queue)](./linkedList/queueLinked.cpp)
-36. Interchanging two nodes in a Linked List
-37. Sorting of Linked List
-38. Concatenation of two Linked List
+36. [Interchanging two nodes in a Linked List](./linkedList/swappingNodes.cpp)
+37. [Sorting of Linked List](./linkedList/sorting.cpp)
+38. [Concatenation of two Linked List](./linkedList/concatLL.cpp)
 
 
 ### Tree
