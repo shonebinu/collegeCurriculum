@@ -127,6 +127,98 @@ void CLL::del_end() {
     delete(temp);
 }
 
-void CLL::del_beg() {
+void CLL::del_bet() {
     int i, pos;
+    cout << "Enter the position: ";
+    cin >> pos;
+    if (pos == 1) {
+        del_beg();
+        return;
+    }
+    ptr = last -> next;
+    for (i = 1; i < pos-1; i++) {
+        ptr = ptr -> next;
+        if (ptr == last) {
+            cout << "Invalid position";
+            break;
+        }
+    }
+    if (ptr != last) {
+        if (ptr -> next == last)
+            del_end();
+        else {
+            temp = ptr -> next;
+            ptr -> next = temp -> next;
+            cout << temp -> item << " is deleted";
+            delete(temp);
+        }
+    }
+}
+
+void CLL::search() {
+    int flag = 0;
+    cout << "Enter the item to be searched: ";
+    cin >> value;
+    ptr = last -> next;
+    while (ptr != last) {
+        if (ptr -> item == value) {
+            flag = 1;
+            ptr = ptr -> next;
+        }
+    }
+    if (last -> item == value) 
+        flag = 1;
+
+    if (flag == 1)
+        cout << "Item present in the list";
+    else 
+        cout << "Item not present";
+}
+
+void CLL::traverse() {
+    if (last == 0) {
+        cout << "The list is empty" << endl;
+        return;
+    }
+    ptr = last -> next;
+    cout << "The list is: " << endl;
+    while (ptr != last) {
+        cout << ptr -> item << endl;
+        ptr = ptr -> next;
+    }
+    cout << last -> item;
+}
+
+int main() {
+    int ch;
+    CLL ob;
+    cout << endl << "\tMENU";
+    while (true) {
+        cout << endl << "1. Creation";
+        cout << endl << "2. Insertion at beginning";
+        cout << endl << "3. Insertion in between";
+        cout << endl << "4. Insertion at end";
+        cout << endl << "5. Deletion from beginning";
+        cout << endl << "6. Deletion from end";
+        cout << endl << "7. Deletion from a specified position";
+        cout << endl << "8. Search";
+        cout << endl << "9. Traverse";
+        cout << endl << "10. Exit";
+        cout << endl << "Enter your choice: ";
+        cin >> ch;
+        switch(ch) {
+            case 1: ob.create(); break;
+            case 2: ob.in_beg(); break;
+            case 3: ob.in_bet(); break;
+            case 4: ob.in_end(); break;
+            case 5: ob.del_beg(); break;
+            case 6: ob.del_end(); break;
+            case 7: ob.del_bet(); break;
+            case 8: ob.search(); break;
+            case 9: ob.traverse(); break;
+            case 10: return 0;
+            default: cout << "Invalid choice";
+        }
+    }
+    return 0;
 }
