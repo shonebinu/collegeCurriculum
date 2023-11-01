@@ -107,7 +107,7 @@ void SL::del_spec() {
             ptr = ptr -> next;
             if (ptr == 0 || ptr -> next == 0) {
                 cout << "Invalid position";
-                break;
+                return;
             }
         }
         if (ptr != 0) {
