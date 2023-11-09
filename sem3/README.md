@@ -21,35 +21,34 @@ The programs and algorithms inside this course starts it's array index from 1, e
 
 #### Sparse Matrix
 18. [Sparse to 3-tupled form](./array/sparseToTriplet.cpp)
-19. [Is it a sparse matrix?](./array/checkSparse.cpp)
-20. [Transpose of a sparse matrix](./array/transposeSparse.cpp) 
-21. [Sparse Matrix Addition](./array/sparseAddition.cpp) 
+19. [Transpose of a sparse matrix](./array/transposeSparse.cpp) 
+20. [Sparse Matrix Addition](./array/sparseAddition.cpp) 
 
 #### Generic Array Problems 
-22. [Polynomial Addition](./array/polynomial.cpp)
+21. [Polynomial Addition](./array/polynomial.cpp)
 
 ### Stack Operations 
-23. [Stack Implementation using Array](./stack/stackUsingArray.cpp)
-24. [Postfix Evaluation](./stack/postfix_evaluation.cpp)
-25. [Infix to Postfix Conversion](./stack/infixToPostfix.cpp)
-26. [Infix to Prefix Conversion](./stack/infixToPrefix.cpp)
-27. [Reversing a string using Stack](./stack/reverseString.cpp)
+22. [Stack Implementation using Array](./stack/stackUsingArray.cpp)
+23. [Postfix Evaluation](./stack/postfix_evaluation.cpp)
+24. [Infix to Postfix Conversion](./stack/infixToPostfix.cpp)
+25. [Infix to Prefix Conversion](./stack/infixToPrefix.cpp)
+26. [Reversing a string using Stack](./stack/reverseString.cpp)
 
 ### Queue Operations
-28. [Queue Implementation using Array](./queue/queueArray.cpp)
-29. [Circular Queue using Array](./queue/circularQueue.cpp)
+27. [Queue Implementation using Array](./queue/queueArray.cpp)
+28. [Circular Queue using Array](./queue/circularQueue.cpp)
 
 ### Linked List (LL)
-30. [Singly Linked List](./linkedList/sll.cpp)
-31. [Doubly Linked List](./linkedList/dll.cpp)
-32. [Circular Linked List](./linkedList/circularLL.cpp)
-33. [Circular Doubly Linked List](./linkedList/cdll.cpp)
-34. [Stack using Linked List (Linked Stack)](./linkedList/stackLinked.cpp)
-35. [Queue using Linked List (Linked Queue)](./linkedList/queueLinked.cpp)
-36. [Interchanging two nodes in a Linked List](./linkedList/swappingNodes.cpp)
-37. [Sorting of Linked List](./linkedList/sorting.cpp)
-38. [Concatenation of two Linked List](./linkedList/concatLL.cpp)
+29. [Singly Linked List](./linkedList/sll.cpp)
+30. [Doubly Linked List](./linkedList/dll.cpp)
+31. [Circular Linked List](./linkedList/circularLL.cpp)
+32. [Circular Doubly Linked List](./linkedList/cdll.cpp)
+33. [Stack using Linked List (Linked Stack)](./linkedList/stackLinked.cpp)
+34. [Queue using Linked List (Linked Queue)](./linkedList/queueLinked.cpp)
+35. [Interchanging two nodes in a Linked List](./linkedList/swappingNodes.cpp)
+36. [Sorting of Linked List](./linkedList/sorting.cpp)
+37. [Concatenation of two Linked List](./linkedList/concatLL.cpp)
 
 
 ### Tree
-39. [Binary Search Tree](./tree/bst.cpp)
+38. [Binary Search Tree](./tree/bst.cpp)
