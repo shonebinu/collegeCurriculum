@@ -21,7 +21,7 @@ class CLL {
     void create();
     void in_beg();
     void in_bet();
-    void in_eng();
+    void in_end();
     void del_beg();
     void del_bet();
     void del_end();
