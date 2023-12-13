@@ -78,7 +78,7 @@ int main() {
     for (i = 1; i <= m; i++) 
         a.create();
 
-    cout << "Enter the number of nodes in second list";
+    cout << "Enter the number of nodes in second list: ";
     cin >> n;
 
     for (i = 1; i <= n; i++)
