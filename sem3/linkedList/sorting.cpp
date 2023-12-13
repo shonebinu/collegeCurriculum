@@ -65,7 +65,7 @@ void SL::sort() {
 
 int main() {
     int n, i;
-    sl ob;
+    SL ob;
     cout << "Enter the number of nodes in list: ";
     cin >> n;
     cout << "Enter the elements: ";
