@@ -4,7 +4,7 @@ using namespace std;
 
 struct Node {
     int item;
-    struct Node link;
+    struct Node *link;
 };
 
 typedef struct Node node;
@@ -71,7 +71,7 @@ int main() {
     int ch;
 
     while(true) {
-        cout << "1. Insertion" << endl << "2. Deletion" << endl "3. Traversal" << endl << "4. Exit" << endl;
+        cout << "1. Insertion" << endl << "2. Deletion" << endl << "3. Traversal" << endl << "4. Exit" << endl;
         cout << "Enter choice: ";
         cin >> ch;
 
