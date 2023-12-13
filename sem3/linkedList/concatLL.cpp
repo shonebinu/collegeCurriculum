@@ -5,7 +5,7 @@ using namespace std;
 struct Node {
     int item;
     struct Node *next;
-}
+};
 
 typedef struct Node node;
 
