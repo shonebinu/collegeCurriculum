@@ -1,80 +1,86 @@
 #include <iostream>
-
+#define MAX 15
 using namespace std;
 
 class Array {
   public:
-    int array[10][10], b[10][10], r, c, t = 0;
-    void sparse();
-    void create();
-    void transpose();
+  int array[MAX][MAX], triplet[MAX][MAX], trans[MAX][MAX], row, cols, nonZero, k; // k = iterative element
+  void create();
+  void traversal();
+  void sparse();
+  void transpose();
 };
 
 void Array::create() {
-  cout<<"Enter the no. of rows and colums: ";
-  cin>>r>>c;
-  cout<<"Enter the elements: \n";
-  for (int i = 0; i < r; i++)
-    for (int j = 0; j < c; j++)
-      cin>>array[i][j];
+  cout << "Enter the number of rows and cols: ";
+  cin >> row >> cols;
+  cout << "Enter the elements: " << endl;
+  for (int i = 0; i < row; i++) 
+    for (int j = 0; j < cols; j++)
+      cin >> array[i][j];
+}
+
+void Array::traversal() {
+  cout << "The matrix: " << endl;
+  for (int i = 0; i < row; i++) {
+    for (int j = 0; j < cols; j++)
+      cout << array[i][j] << " ";
+  cout << endl;
+  }
 }
 
 void Array::sparse() {
-  int p = 1;
-  for (int i = 0; i < r; i++) {
-    for (int j = 0; j < c; j++) {
+  nonZero = 0, k = 1;
+  for (int i = 0; i < row; i++) {
+    for (int j = 0; j < cols; j++) {
       if (array[i][j] != 0) {
-        b[p][0] = i+1;
-        b[p][1] = j+1;
-        b[p][2] = array[i][j];
-        p++, t++;
+        triplet[k][0] = i;
+        triplet[k][1] = j;
+        triplet[k][2] = array[i][j];
+        k++, nonZero++;
       }
     }
   }
-  b[0][0] = r;
-  b[0][1] = c;
-  b[0][2] = t;
-
-  cout<<"\nThe above matrx in 3-tupled form: \n";
-  for (int i = 0; i <= t; i++) {
-    for (int j = 0; j < 3; j++)
-      cout<<b[i][j]<<" ";
-    cout<<endl;
+  triplet[0][0] = row;
+  triplet[0][1] = cols;
+  triplet[0][2] = nonZero;
+  cout << "3 tuple form: " << endl;
+  for (int i = 0; i <= nonZero; i++) {
+    for (int j = 0; j < 3; j++) 
+      cout << triplet[i][j] << " ";
+    cout << endl;
   }
 }
 
 void Array::transpose() {
-  int st[10][10], k = 1;
+  int l = 1; // to iterate
 
-  for (int i = 1; i <= c; i++) 
-    for (int j = 1; j <= t; j++) 
-      if (b[j][1] == i) {
-        st[k][0] = b[j][1];
-        st[k][1] = b[j][0];
-        st[k][2] = b[j][2];
-        k++;
+  for (int i = 0; i < cols; i++) {
+    for (int j = 1; j <= nonZero; j++) {
+      if (i == triplet[j][1]) {
+        trans[l][0] = triplet[j][1];
+        trans[l][1] = triplet[j][0];
+        trans[l][2] = triplet[j][2];
+        l++;
       }
-  st[0][0] = c;
-  st[0][1] = r;
-  st[0][2] = t;
+    } 
+  } 
+  trans[0][0] = cols;
+  trans[0][1] = row;
+  trans[0][2] = nonZero;
 
-  cout<<"\nTranpose is: "<<endl;
-  for (int i = 0; i <= t; i++) {
+  cout << "The transpose is: " << endl;
+  for (int i = 0; i <= nonZero; i++) {
     for (int j = 0; j < 3; j++)
-      cout<<st[i][j]<<" ";
-    cout<<endl;
+      cout << trans[i][j] << " ";
+    cout << endl;
   }
 }
 
 int main() {
   Array object;
   object.create();
-  cout<<"\nThe given matrix is: \n";
-  for (int i = 0; i < object.r; i++) {
-    for (int j = 0; j < object.c; j++)
-      cout<<object.array[i][j]<<" ";
-    cout<<endl;
-  }
+  object.traversal();
   object.sparse();
   object.transpose();
   return 0;
