@@ -49,6 +49,7 @@ void CLL::in_beg() {
     cout << "Enter the item to be inserted: ";
     cin >> value;
     ptr = new node;
+    ptr -> item = value;
     ptr -> next = last -> next;
     last -> next = ptr;
 }

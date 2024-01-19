@@ -11,10 +11,12 @@ typedef struct Node node;
 
 class BST {
     public: 
+        int flag;
         node *root, *temp, *ptr;
 
         BST() {
             root = 0;
+            flag = 0;
         }
 
         void create();
@@ -22,6 +24,7 @@ class BST {
         void inorder(node* );
         void preorder(node* );
         void postorder(node* );
+        void search(node*, int);
 };
 
 void BST::create() {
@@ -92,8 +95,27 @@ void BST::preorder(node * p) {
     }
 }
 
+void BST::search(node *p, int x) {
+    if (!flag && p) {
+        if (p -> data == x)
+            flag = 1;
+        else {
+            search(p -> lchild, x);
+            search(p -> rchild, x);
+        }
+    }
+}
+
 int main() {
+    int num;
     BST ob;
     ob.create();
+    cout << endl << "Enter the element to search: ";
+    cin >> num;
+    ob.search(ob.root, num);
+    if (ob.flag)
+        cout << "Successful search";
+    else 
+        cout << "Unsuccessful search";
     return 0;
 }
