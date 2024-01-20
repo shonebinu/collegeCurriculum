@@ -9,5 +9,8 @@
 ### HTML
 
 1. **HTML webpage for college (using lists)**
-   - [Code](./web/collegeWeb/index.html)
-   - [Preview](https://shonebinu.github.io/collegeCurriculum/sem4/php/timeTable/index.html)
+   - [Code](./web/collegeWebpage/index.html)
+   - [Preview](https://shonebinu.github.io/collegeCurriculum/sem4/web/collegeWebpage/index.html)
+2. **HTML webpage to display Time Table (using table)**
+   - [Code](./web/timeTable/index.html)
+   - [Preview](https://shonebinu.github.io/collegeCurriculum/sem4/web/timeTable/index.html)
