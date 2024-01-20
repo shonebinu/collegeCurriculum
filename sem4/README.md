@@ -18,7 +18,7 @@
 ---
 
 ## Linux Record Programs
-*Note: The scripts given here are for **bash** interpreter*
+*Note: The scripts given here are for `bash` interpreter*
 
 ### Directory Related Commands
 1. **Create the following directory structure**
@@ -37,4 +37,35 @@ flowchart TD
 ```
 ```bash
 mkdir -p nirmala/{ug/{ba,bsc,bcom,bca},pg/{ma,msc,mcom,mca}} #you could also expand it
+```
+
+2. **Remove the directory `bcom`**
+```bash
+rmdir nirmala/ug/bcom
+```
+
+3. **Change to parent directory**
+```
+cd ..
+```
+
+4. **Display the contents of current directory in detail**
+```
+ls -al 
+```
+
+5. **Display the current path**
+```
+pwd 
+```
+
+6. **Change the name of bca to nbca**
+```
+mv nirmala/ug/bca nirmala/ug/nbca
+```
+
+### File Related Commands
+1. **Change to `nbca`**
+```bash
+cd nirmala/ug/nbca
 ```
