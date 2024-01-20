@@ -6,8 +6,6 @@
 
 *HTML, CSS and JavaScript programs may be previewed directly from this repo*
 
-### HTML & CSS
-
 1. **HTML webpage for college (using lists)**
    - [Code](./web/collegeWebpage/index.html)
    - [Preview](https://shonebinu.github.io/collegeCurriculum/sem4/web/collegeWebpage/index.html)
@@ -17,7 +15,9 @@
 3. **Registration Form using HTML and CSS**
    - [Code](./web/registrationForm/index.html)
    - [Preview](https://shonebinu.github.io/collegeCurriculum/sem4/web/registrationForm/index.html)
-
+4. **JavaScript program to calculate sum and product of two numbers using functions**
+   - [Code](./web/jsFunction/index.html)
+   - [Preview](https://shonebinu.github.io/collegeCurriculum/sem4/web/jsFunction/index.html)
 
 ---
 
