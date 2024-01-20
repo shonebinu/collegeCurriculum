@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <style>
+      main {
+        width: 40%;
+        margin: auto;
+        border: 2px dotted black;
+        padding: 20px;
+      }
+      label {
+        display: inline-block;
+        width: 150px;
+        padding: 10px 0;
+      }
+      table {
+        margin-bottom: 20px;
+      }
+    </style>
+</head>
+<body>
+    <h1 align=center>Student Registration Form</h1>
+    <main>
+      <label>First Name: </label>
+      <input type=text><br>
+      <label>Last Name: </label>
+      <input type=text></br>
+      <label>Date of Birth: </label>
+      <input type=date><br>
+      <label>Email: </label>
+      <input type=email><br>
+      <label>Mobile: </label>
+      <input type=tel><br>
+      <label>Gender: </label>
+      Male<input type=radio name=gender>
+      Female<input type=radio name=gender><br>
+      <label>Address: </label>
+      <textarea></textarea><br>
+      <label>Nationality: </label>
+      <select>
+        <option>India</option>
+        <option>China</option>
+        <option>Japan</option>
+      </select><br>
+      <label>Hobbies: </label>
+      <input type=checkbox>Drawing</input>
+      <input type=checkbox>Sports</input>
+      <input type=checkbox>Dance</input>
+      <input type=checkbox>Reading</input>
+      <input type=checkbox>Singing</input><br>
+      <label>Qualification: </label>
+      <table border=2px cellspacing=0 cellpadding=10>
+        <tr>
+          <th>Examination</th>
+          <th>Year</th>
+          <th>Mark</th>
+        </tr>
+        <tr>
+          <td><input type=text>
+          <td><input type=text>
+          <td><input type=text>
+        </tr>
+        <tr>
+          <td><input type=text>
+          <td><input type=text>
+          <td><input type=text>
+        </tr>
+      </table>
+      <input type=submit value=Submit>
+      <input type=reset>
+    </main>
+</body>
+</html>

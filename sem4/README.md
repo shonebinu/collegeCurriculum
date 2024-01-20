@@ -14,6 +14,10 @@
 2. **HTML webpage to display Time Table (using table)**
    - [Code](./web/timeTable/index.html)
    - [Preview](https://shonebinu.github.io/collegeCurriculum/sem4/web/timeTable/index.html)
+3. **Registration Form using HTML and CSS**
+   - [Code](./web/registrationForm/index.html)
+   - [Preview](https://shonebinu.github.io/collegeCurriculum/sem4/web/registrationForm/index.html)
+
 
 ---
 
