@@ -2,7 +2,7 @@
 
 ## Table of Contents
 - [Web Development Record Programs](#web-development-record-programs)
-- [Linux](#linux-record-programs)
+- [Linux Record Programs](#linux-record-programs)
 
 ## Web Development Record Programs
 *Using HTML, CSS, JavaScript and PHP.*
