@@ -8,4 +8,6 @@
 
 ### HTML
 
-1. [HTML webpage for your college website(use lits)](./web/collegeWeb.html) [Preview](https://shonebinu.github.io/collegeCurriculum/sem4/php/timeTable.html)
+1. **HTML webpage for college (using lists)**
+   - [Code](./web/collegeWeb/index.html)
+   - [Preview](https://shonebinu.github.io/collegeCurriculum/sem4/php/timeTable/index.html)
