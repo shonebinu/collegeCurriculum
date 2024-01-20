@@ -26,6 +26,6 @@ The directory contains mostly record programs, there's no previous year question
 [sem3 README](./sem3/README.md)
 
 ## [Sem 4](./sem4)
-Learning Web Development(HTML + CSS + JavaScript + PHP) and Linux, contents being uploaded regularly
+Learning Web Development(HTML + CSS + JavaScript + PHP) and Linux, contents being uploaded regularly.
 
 [sem4 README](./sem4/README.md)
