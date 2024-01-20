@@ -32,3 +32,6 @@ flowchart TD
     C --> J[mcom]
     C --> K[mca]
 ```
+```bash
+mkdir -p nirmala/{ug/{ba,bsc,bcom,bca},pg/{ma,msc,mcom,mca}} #you could also expand it
+```
