@@ -311,5 +311,20 @@ vi f1
 2. **Open the same file and copy the first line and paste it into third line**
 ```bash
 vi f1
+:1co3
+```
 
+3. **Delete the second and third line**
+```bash
+:2,3d
+```
+
+4. **Delete a word from current position**
+```bash
+dw
+```
+
+5. **Save and Exit from the file**
+```bash
+:wq
 ```
