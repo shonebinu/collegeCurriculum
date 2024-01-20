@@ -1,5 +1,9 @@
 # Sem 4
 
+## Table of Contents
+- [Web Development Record Programs](#web-development-record-programs)
+- [Linux](#linux-record-programs)
+
 ## Web Development Record Programs
 *Using HTML, CSS, JavaScript and PHP.*
 
@@ -61,7 +65,7 @@ ls -al
 pwd 
 ```
 
-6. **Change the name of bca to nbca**
+6. **Change the name of `bca` to `nbca`**
 ```bash
 mv nirmala/ug/bca nirmala/ug/nbca
 ```
@@ -121,7 +125,7 @@ cat bcastudents | tr "[a-z]" "[A-Z]"
 pr bcastudents
 ```
 
-11. **Create files `f1`, `f2`, `f3`, `f4` in nbca**
+11. **Create files `f1`, `f2`, `f3`, `f4` in `nbca`**
 ```bash
 cat >> f1
 cat >> f2
