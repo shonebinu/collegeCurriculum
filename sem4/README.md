@@ -14,3 +14,21 @@
 2. **HTML webpage to display Time Table (using table)**
    - [Code](./web/timeTable/index.html)
    - [Preview](https://shonebinu.github.io/collegeCurriculum/sem4/web/timeTable/index.html)
+
+## Linux Record Programs
+
+### Directory Related Commands
+1. **Create the following directory structure**
+```mermaid
+flowchart TD
+    A[nirmala] --> B[ug]
+    A --> C[pg]
+    B --> D[ba]
+    B --> E[bsc]
+    B --> F[bcom]
+    B --> G[bca]
+    C --> H[ma]
+    C --> I[msc]
+    C --> J[mcom]
+    C --> K[mca]
+```
