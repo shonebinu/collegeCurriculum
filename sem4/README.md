@@ -15,7 +15,10 @@
    - [Code](./web/timeTable/index.html)
    - [Preview](https://shonebinu.github.io/collegeCurriculum/sem4/web/timeTable/index.html)
 
+---
+
 ## Linux Record Programs
+*Note: The scripts given here are for **bash** interpreter*
 
 ### Directory Related Commands
 1. **Create the following directory structure**
