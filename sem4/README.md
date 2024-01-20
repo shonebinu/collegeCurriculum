@@ -1,10 +1,7 @@
 # Sem 4
 
 ## Web Development Record Programs
-
-**Using HTML, CSS, JavaScript and PHP.**
-
-*HTML, CSS and JavaScript programs may be previewed directly from this repo*
+*Using HTML, CSS, JavaScript and PHP.*
 
 1. **HTML webpage for college (using lists)**
    - [Code](./web/collegeWebpage/index.html)
