@@ -6,7 +6,7 @@
 
 *HTML, CSS and JavaScript programs may be previewed directly from this repo*
 
-### HTML
+### HTML & CSS
 
 1. **HTML webpage for college (using lists)**
    - [Code](./web/collegeWebpage/index.html)
