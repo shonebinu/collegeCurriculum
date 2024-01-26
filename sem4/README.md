@@ -19,6 +19,9 @@
 4. **JavaScript program to calculate sum and product of two numbers using functions**
    - [Code](./web/jsFunction/index.html)
    - [Preview](https://shonebinu.github.io/collegeCurriculum/sem4/web/jsFunction/index.html)
+5. **JavaScript program to illustrate various JS Events**
+   - [Code](./web/events/index.html)
+   - [Preview](https://shonebinu.github.io/collegeCurriculum/sem4/web/events/index.html)
 
 ---
 

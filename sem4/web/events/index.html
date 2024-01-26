@@ -1,7 +1,41 @@
 <html>
-<head>
-</head>
-<body>
 
+<head>
+  <title>JS Events</title>
+  <script>
+
+    function sayLoad() {
+      alert("Finished loading the page");
+    }
+
+    function sayHello() {
+      alert("Hello World!");
+    }
+
+    function sayDown() {
+      alert("Key pressed down");
+    }
+
+    function sayChange() {
+      alert("Content changed");
+    }
+
+    function mouseOver() {
+      document.getElementById("demo").style.color = "tomato";
+    }
+
+    function mouseOut() {
+      document.getElementById("demo").style.color = "teal";
+    }
+
+  </script>
+</head>
+
+<body onload="sayLoad()">
+  <input type="button" onclick="sayHello()" value="say Hello"><br>
+  Name: <input type="text" onkeydown="sayDown()"><br>
+  Place: <input type="text" onchange="sayChange()"><br>
+  <h1 id="demo" onmouseover="mouseOver()" onmouseout="mouseOut()">Mouse over me</h1>
 </body>
+
 </html
