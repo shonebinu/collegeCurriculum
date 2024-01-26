@@ -1,0 +1,80 @@
+<html>
+
+<head>
+  <title>JS Validations</title>
+  <script>
+    function validation() {
+      var name = document.getElementById("txtname").value;
+      var address = document.getElementById("txtaddrs").value;
+      var email = document.getElementById("txtmail").value;
+      var password = document.getElementById("txtpswd").value;
+      var phone = document.getElementById("txtphone").value;
+
+      if (name == "") {
+        window.alert("Please enter name");
+        document.getElementById("txtname").focus();
+        return false;
+      }
+
+      if (address == "") {
+        window.alert("Please enter address");
+        document.getElementById("txtaddrs").focus();
+        return false;
+      }
+
+      if (email == "") {
+        window.alert("Please enter email");
+        document.getElementById("txtmail").focus();
+        return false;
+      }
+
+      if (email != "") {
+        atPos = email.indexOf("@");
+        dotPos = email.lastIndexOf(".");
+        if (atPos < 1 || dotPos < atPos + 2 || (dotPos + 2 >= email.length)) {
+          alert("Please enter correct email");
+          document.getElementById("txtmail").focus();
+          return false;
+        }
+      }
+
+      if (password == "") {
+        window.alert("Please enter password");
+        document.getElementById("txtpswd").focus();
+        return false;
+      }
+
+      if ((password.length < 5) || (password.length > 10)) {
+        window.alert("Password length should be between 5 and 10");
+        document.getElementById("txtpswd").focus();
+        return false;
+      }
+
+      if (phone == "") {
+        window.alert("Please enter your phone number");
+        document.getElementById("txtphone").focus();
+        return false;
+      }
+
+      if (phone.length != 10) {
+        window.alert("Please enter a valid phone number");
+        document.getElementById("txtphone").focus();
+        return false;
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <form name="regForm" onsubmit="return validation()" method="POST">
+    Name: <input type="text" name="name" id="txtname"><br><br>
+    Address: <textarea name="address" id="txtaddrs"></textarea><br><br>
+    Email ID: <input type="text" name="email" id="txtmail"><br><br>
+    Password: <input type="password" name="password" id="txtpswd"><br><br>
+    Phone: <input type="text" name="phone" id="txtphone"><br><br>
+    <input type="submit" name="submit" value="submit"><br><br>
+    <input type="reset" name="reset" value="reset"><br><br>
+  </form>
+</body>
+
+</html>
