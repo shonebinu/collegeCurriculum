@@ -32,5 +32,5 @@ if test -e $f1; then # instead of []
   else
     echo "It is not writeable file"
   fi
-
+fi
   
