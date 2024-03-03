@@ -2,7 +2,7 @@ echo "Enter two strings: "
 read str1
 read str2
 
-if [ "$str1" = "$str2" ]; then
+if [ "$str1" = "$str2" ]; then # -eq doesn't work for strings
   echo "Both strings are equal"
 else
   echo "Strings are not equal"
