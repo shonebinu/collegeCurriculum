@@ -47,7 +47,7 @@ sh PROGRAM.sh
 
 6. [Write a shell program to get two file names as command line arguments and perform comparison of these two files](./linux/fileComp.sh)
 
-7. [Write a shell script to get three file names and a directory name as command line arguments and create the three files and the directory in the current working directory*](./linux/fourArg.sh)
+7. [Write a shell script to get three file names and a directory name as command line arguments and create the three files and the directory in the current working directory](./linux/fourArg.sh)
 
 8. [Write a menu driven shell program to perform arithmetic operations](./linux/menuArithmeticOperations.sh)
 
