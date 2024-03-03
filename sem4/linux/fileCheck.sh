@@ -32,5 +32,11 @@ if test -e $f1; then # instead of []
   else
     echo "It is not writeable file"
   fi
+
+  if test -x $f1; then
+    echo "It is an executable file"
+  else
+    echo "It is not an executable file"
+  fi
 fi
   
