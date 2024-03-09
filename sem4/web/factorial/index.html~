@@ -1,0 +1,8 @@
+<html>
+<body>
+<form action="factorial.php" method="POST">
+	Enter a number: <input type="number" name="num">
+	<input type="submit" value="Factorial">
+</form>
+</body>
+</html>
