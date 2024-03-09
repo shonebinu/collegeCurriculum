@@ -21,6 +21,8 @@
 6. **JavaScript program to illustrate JS validations**
    - [Code](./web/jsValidations/index.html)
    - [Preview](https://shonebinu.github.io/collegeCurriculum/sem4/web/jsValidations/index.html)
+7. **PHP program to find factorial**
+   - [Code](./web/factorial)
 
 ---
 
