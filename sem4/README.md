@@ -23,9 +23,9 @@
    - [Preview](https://shonebinu.github.io/collegeCurriculum/sem4/web/jsValidations/index.html)
 7. [**PHP program to find factorial**](./web/factorial)
 8. [**PHP program to find length, reverse, uppercase and lowercase of a string**](./web/stringOperations)
-9. [**PHP program to validate name, address, dob, gender & mobile of an Application Form**](./web/applicationForm)
+9. [**PHP program to validate email**](./web/emailValidation)
 10. [**PHP program to validate age(b/w 18 and 40) and password(length > 8, contain numbers and special characters)**](./web/passAndAgeValidation)
-11. [**PHP program to validate email**](./web/emailValidation)
+11. [**PHP program to validate name, address, dob, gender & mobile of an Application Form**](./web/applicationForm)
 12. [**PHP program to record student details if and only if the student is 18 years old or more**](./web/studentAge)
 
 
