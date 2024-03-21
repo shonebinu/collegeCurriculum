@@ -19,7 +19,7 @@ if (mysqli_num_rows($result) > 0) {
     echo "<th>Author</th>";
     echo "<th>Price</th>";
     echo "</tr>";
-    while($row = mysqli_fetch_array($result)) {;
+    while($row = mysqli_fetch_array($result)) {
          echo "<tr>";
          echo "<td>" . $row['id'] . "</td>";
          echo "<td>" . $row['title'] . "</td>";
