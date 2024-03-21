@@ -28,6 +28,7 @@
 11. [**PHP program to validate name, address, dob, gender & mobile of an Application Form**](./web/applicationForm)
 12. [**PHP program to record student details if and only if the student is 18 years old or more**](./web/studentAge)
 13. [**PHP program to insert records of employee and display the record**](./web/employee)
+14. [**PHP program to search an employee with name and update the details**](./web/employeeSearch)
 
 
 ---
