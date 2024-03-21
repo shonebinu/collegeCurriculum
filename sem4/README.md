@@ -27,6 +27,7 @@
 10. [**PHP program to validate age(b/w 18 and 40) and password(length > 8, contain numbers and special characters)**](./web/passAndAgeValidation)
 11. [**PHP program to validate name, address, dob, gender & mobile of an Application Form**](./web/applicationForm)
 12. [**PHP program to record student details if and only if the student is 18 years old or more**](./web/studentAge)
+13. [**PHP program to insert records of employee and display the record**](./web/employee)
 
 
 ---
