@@ -26,6 +26,17 @@ The directory contains mostly record programs, there's no previous year question
 [sem3 README](./sem3/README.md)
 
 ## [Sem 4](./sem4)
-Learning Web Development(HTML + CSS + JavaScript + PHP) and Linux, contents being uploaded regularly.
+Learnt about Web Development(HTML + CSS + JavaScript + PHP) and Linux.
+
+The directory contains record programs, there's no previous year questions and answers since the lab questions are direct from the record.
 
 [sem4 README](./sem4/README.md)
+
+
+
+## [Sem 5](./sem5)
+Learnt about Java Programming using Linux.
+
+The directory contains record programs.
+
+[sem5 README](./sem5/README.md)
