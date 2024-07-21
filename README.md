@@ -28,7 +28,7 @@ The directory contains mostly record programs, there's no previous year question
 ## [Sem 4](./sem4)
 Learnt about Web Development(HTML + CSS + JavaScript + PHP) and Linux.
 
-The directory contains record programs, there's no previous year questions and answers since the lab questions are direct from the record.
+The directory contains record programs, and some of the previous year PHP, Linux Lab exam questions.
 
 [sem4 README](./sem4/README.md)
 
