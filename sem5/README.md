@@ -10,4 +10,4 @@
 
 4. [Write a Java program to calculate the volume of different objects using method overloading](./java/MethodOverloading.java)
 
-5. [Write a program to implement a class called Square with a method area(double a) that finds the area of the square. A class Cube which is a subclass of Square and an overriding method area(double a) that finds the surface area(6a^2) of a cube](./java/AreaCalculator.java)
+5. [Write a program to implement a class called Square with a method area(double a) that finds the area of the square. A class Cube which is a subclass of Square and an overriding method area(double a) that finds the surface area(6a^2) of a cube](./java/MethodOverriding.java)

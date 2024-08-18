@@ -14,7 +14,7 @@ class Cube extends Square {
     }
 }
 
-class AreaCalculator {
+class MethodOverriding {
     public static void main(String[] args) {
         Square square = new Square();
         Cube cube = new Cube();
