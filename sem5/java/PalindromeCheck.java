@@ -1,17 +1,17 @@
 class PalindromeCheck {
     public static void main(String[] args) {
-        String original = args[0];
+        int number = Integer.parseInt(args[0]);
 
-        boolean isPalindrome = true;
+        int originalNumber = number;
+        int reversedNumber = 0;
 
-        for (int i = 0; i < original.length() / 2; i++) {
-            if (original.charAt(i) != original.charAt(original.length() - 1 - i)) {
-                isPalindrome = false;
-                break;
-            }
+        while (number != 0) {
+            int digit = number % 10;
+            reversedNumber = reversedNumber * 10 + digit;
+            number = number / 10;
         }
 
-        if (isPalindrome) {
+        if (originalNumber == reversedNumber) {
             System.out.println("Palindrome");
         } else {
             System.out.println("Not a Palindrome");
