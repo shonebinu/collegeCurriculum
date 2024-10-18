@@ -51,3 +51,7 @@
 19. [Write a java program that implements a multi-thread application that has three threads. First thread generates a random integer for every one second. second thread computes square of the number and prints; third thread gives the value of cube of the number](./java/InterThreadDemo.java)
 
 20. [Write multithreadedprogram to print lowercase letters and uppercase letters from two differentthreads with suitable delay](./java/ThreadExample1.java)
+
+## Java Programming using Linux past lab exam qns and answers
+
+Most of the past lab exam qns are similar to what we have here on our record. However, some of the past lab exam qns with answers that I've completed can be found [here.](./prevLab/)
