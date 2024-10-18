@@ -39,3 +39,15 @@
     i) Deposit          ii) Withdraw           iii) Display the details.
 
     The program should work for n accounts
+
+15. [Java program to illustrate Armstrong Exception](./java/ArmstrongTest.java)
+
+16. [Program to illustrate user defined Exception add 2 numbers when the first numbers is positive otherwise raise an exception](./java/ExpTest.java)
+
+17. [Program to illustrate prime Exception](./java/PrimeTest.java)
+
+18. [Java application program to print odd and even numbers less than 10 using multithreading](./java/EvenOddThread.java)
+
+19. [Write a java program that implements a multi-thread application that has three threads. First thread generates a random integer for every one second. second thread computes square of the number and prints; third thread gives the value of cube of the number](./java/InterThreadDemo.java)
+
+20. [Write multithreadedprogram to print lowercase letters and uppercase letters from two differentthreads with suitable delay](./java/ThreadExample1.java)
