@@ -36,21 +36,60 @@
 
 14. [Create a class Account with the data members account number, balance, name and any other required. Create a Menu driven application to perform the following](./java/Bank.java)
 
-    i) Deposit          ii) Withdraw           iii) Display the details.
+    i) Deposit\
+    ii) Withdraw\
+    iii) Display the details
 
     The program should work for n accounts
 
-15. [Java program to illustrate Armstrong Exception](./java/ArmstrongTest.java)
+15. [Create a class Matrix which contains a two dimensional integer array m, n (order of matrix) as data members. Include the following member functions.](./java/MatrixDemo.java)
 
-16. [Program to illustrate user defined Exception add 2 numbers when the first numbers is positive otherwise raise an exception](./java/ExpTest.java)
+    i) to read the matrix\
+    ii) to display the matrix\
+    iii) to find the tranpose of the matix
 
-17. [Program to illustrate prime Exception](./java/PrimeTest.java)
+16. [Program to create a package named shapes and define abstract class Shape inside it. The Shape class should have an abstract method getArea(). Define two subclasses Rectangle and Circle that extends the Shape class and implements the getArea() method. Create a class FindArea in a different package and use the Rectangle and Circle classes to find the areas of a reactangle and a circle](./java/shapeDemo)
 
-18. [Java application program to print odd and even numbers less than 10 using multithreading](./java/EvenOddThread.java)
+    ```bash
+    javac shapes/Shape.java
+    javac shapes/Rectangle.java
+    javac shapes/Circle.java
+    javac finalpack/FindArea.java
 
-19. [Write a java program that implements a multi-thread application that has three threads. First thread generates a random integer for every one second. second thread computes square of the number and prints; third thread gives the value of cube of the number](./java/InterThreadDemo.java)
+    java finalpack/FindArea
+    ```
 
-20. [Write multithreadedprogram to print lowercase letters and uppercase letters from two differentthreads with suitable delay](./java/ThreadExample1.java)
+17. [Java program to illustrate Armstrong Exception](./java/ArmstrongTest.java)
+
+18. [Program to illustrate prime Exception](./java/PrimeTest.java)
+
+19. [Java application program to print odd and even numbers less than 10 using multithreading](./java/EvenOddThread.java)
+
+20. [Write a java program that implements a multi-thread application that has three threads. First thread generates a random integer for every one second. second thread computes square of the number and prints; third thread gives the value of cube of the number](./java/InterThreadDemo.java)
+
+21. [Write multi threaded program to print lowercase letters and uppercase letters from two differentthreads with suitable delay](./java/ThreadExample1.java)
+
+22. [Java program to perform insertion and retrieval operations using JDBC](./java/Employee.java)
+
+23. [Java applet program to display the National Flag](./java/nationalFlag)
+
+24. [Java applet to display the Laughing face](./java/laughingFace)
+
+25. [Java applet program to display the Olympic Ring](./java/olympicRing)
+
+26. [Write an applet program to load an image and display it](./java/loadImage)
+
+27. [Write an applet program to show how to pass a parameter from an applet code and also illustrate the use of Font class](./java/passParam)
+
+28. [Applet program to perform different Mouse events](./java/mouseDemo)
+
+29. [Applet program to illustrate different KeyEvents](./java/keyDemo)
+
+30. [Java Program for an applet that accepts Roll number,Name, and Marks of 3 subjects of a student. Clicking on a button display the Total, Percentage and Grade of the student](./java/studentDemo)
+
+31. [Program to accept an integer in a textbox, reverse it and find the sum of its digits. Display the result in different textboxes](./java/sumRev)
+
+32. [JFrame program to find the sum of 2 integers using JLabel, JTextField and JButton whenever necessary](./java/JFrame2.java)
 
 ## Java Programming using Linux past lab exam qns and answers
 
